@@ -1,0 +1,5 @@
+LÉ]<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:251;s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2015-11-11 21:46:01";s:13:"post_date_gmt";s:19:"2015-11-11 21:46:01";s:12:"post_content";s:340:"[vc_row][vc_column][vc_column_text]
+
+I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+
+[/vc_column_text][vc_gallery interval="3" images="1199,1008,1004,1002,996,987,985,983,951,960"][/vc_column][/vc_row]";s:10:"post_title";s:4:"Home";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:6:"closed";s:11:"ping_status";s:6:"closed";s:13:"post_password";s:0:"";s:9:"post_name";s:4:"home";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2016-10-07 01:00:57";s:17:"post_modified_gmt";s:19:"2016-10-07 01:00:57";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:56:"http://localhost/~C3PO/bluebox/aquafondo_wp/?page_id=251";s:10:"menu_order";i:0;s:9:"post_type";s:4:"page";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}

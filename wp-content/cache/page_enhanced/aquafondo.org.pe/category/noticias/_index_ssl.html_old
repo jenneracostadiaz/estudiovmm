@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108288916-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108288916-1');
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=977331562379399";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+
+        <meta name="msapplication-TileColor" content="#a8e12a">
+        <meta name="theme-color" content="#a8e12a">
+
+        <link rel="stylesheet" type="text/css" href="https://aquafondo.org.pe/wp-content/cache/minify/62891.css" media="all" />
+<title>Noticias &#8211; AquaFondo</title>
+<link rel='dns-prefetch' href='//platform-api.sharethis.com' />
+<link rel='dns-prefetch' href='//maps.google.com' />
+<link rel='dns-prefetch' href='//fonts.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="AquaFondo &raquo; Feed" href="https://aquafondo.org.pe/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AquaFondo &raquo; RSS de los comentarios" href="https://aquafondo.org.pe/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AquaFondo &raquo; Noticias RSS de la categoría" href="https://aquafondo.org.pe/category/noticias/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/aquafondo.org.pe\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		
+	
+
+
+
+
+
+
+
+
+
+<link rel='stylesheet' id='bergen-font-primary-css'  href='https://fonts.google.com/specimen/Raleway' type='text/css' media='all' />
+<link rel='stylesheet' id='bergen-font-secondary-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=5.1.3' type='text/css' media='all' />
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type="text/javascript" src="https://aquafondo.org.pe/wp-content/cache/minify/c7035.js"></script>
+
+
+
+
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b19883b467fef00119b9f7b&#038;product=sticky-share-buttons-wp'></script>
+<link rel='https://api.w.org/' href='https://aquafondo.org.pe/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aquafondo.org.pe/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aquafondo.org.pe/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.3" />
+
+		
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://aquafondo.org.pe/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.5.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<meta name="twitter:partner" content="tfwp"><meta name="twitter:image" content="https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1.jpg" /><meta name="twitter:card" content="summary" /><meta name="twitter:domain" content="AquaFondo" /><meta name="twitter:title" content="Noticias" /><meta property="og:image" content="https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1.jpg" /><meta property="og:site_name" content="AquaFondo" /><meta property="og:url" content="https://aquafondo.org.pe/category/noticias/" /><meta property="og:type" content="object" /><meta property="og:title" content="Noticias" /><meta name="title" content="Noticias" /><link rel="icon" href="https://aquafondo.org.pe/wp-content/uploads/2016/11/cropped-icono_aqua-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://aquafondo.org.pe/wp-content/uploads/2016/11/cropped-icono_aqua-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://aquafondo.org.pe/wp-content/uploads/2016/11/cropped-icono_aqua-180x180.png" />
+<meta name="msapplication-TileImage" content="https://aquafondo.org.pe/wp-content/uploads/2016/11/cropped-icono_aqua-270x270.png" />
+
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Categoría: Noticias">
+		
+		<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>    </head>
+
+    
+    <body data-rsssl=1 class="archive category category-noticias category-2 wpb-js-composer js-comp-ver-5.7 vc_responsive">
+
+        <noscript>
+        <div class="alert warning">
+            <i class="fa fa-times-circle"></i>You seem to have Javascript disabled. This website needs javascript in order to function properly!        </div>
+        </noscript>
+
+        <!--[if lte IE 8]>
+         <div class="alert error">You are using an outdated browser. Please upgrade your browser to improve your experience.</div>
+    <![endif]-->
+        <div id="page-wrapper">
+            <header>
+
+         
+
+
+
+
+
+                <div id="header">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+
+                                <!-- LOGO -->
+
+                                <a id="logo" href="https://aquafondo.org.pe/">
+                                    <img src="https://aquafondo.org.pe/wp-content/uploads/2016/11/nuevo_logo_aquafondo.png" alt="Home">
+                                </a>
+
+                            </div><!-- col -->
+                            <div class="col-sm-9">
+                                                                    <!-- SEARCH -->
+                                    <div id="search-container">
+                                        <form id="search-form" name="search-form" action="https://aquafondo.org.pe/">
+                                            <fieldset>
+                                                <input type="search"  name="s" id="s" placeholder="Enter your keyword here and then press enter...">
+                                            </fieldset>
+                                        </form>
+                                    </div><!-- search-container -->
+
+                                     
+
+                                <!-- MENU --> 
+                                <nav>
+
+                                    <a id="mobile-menu-button" href="#"><i class="mt-icons-menu"></i></a>
+
+                                    <ul id="menu" class="menu clearfix"><li id="menu-item-1687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home mega-section-count-0 menu-item-1687"><a href="https://aquafondo.org.pe/">Inicio</a></li>
+<li id="menu-item-1973" class="menu-item menu-item-type-post_type menu-item-object-page mega-section-count-0 menu-item-1973"><a href="https://aquafondo.org.pe/nosotros-2/">Nosotros</a></li>
+<li id="menu-item-2223" class="menu-item menu-item-type-post_type menu-item-object-page mega-section-count-0 menu-item-2223"><a href="https://aquafondo.org.pe/nuestro-trabajo/">¿Qué hacemos?</a></li>
+<li id="menu-item-5085" class="menu-item menu-item-type-post_type menu-item-object-page mega-section-count-0 menu-item-5085"><a href="https://aquafondo.org.pe/experiencias/">Experiencias</a></li>
+<li id="menu-item-4976" class="menu-item menu-item-type-post_type menu-item-object-page mega-section-count-0 menu-item-4976"><a href="https://aquafondo.org.pe/publicaciones-aquafondo/">Publicaciones</a></li>
+<li id="menu-item-2262" class="menu-item menu-item-type-post_type menu-item-object-page mega-section-count-0 menu-item-2262"><a href="https://aquafondo.org.pe/contacto-2/">Contacto</a></li>
+<li class="bergen-nav-search"><a class="search-button" href="#"><img class="bergen-search-img" src="https://aquafondo.org.pe/wp-content/themes/bergen-theme/layouts/images/search2.png" alt="Search"/></a></li></ul>
+                                </nav>
+
+                            </div><!-- col -->
+                        </div><!-- row -->
+                    </div><!-- container -->
+
+                </div><!-- header -->
+
+
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin" rel="stylesheet" type="text/css" />
+
+            </header><!-- HEADER -->
+
+
+            <!-- CONTENT -->
+            <div id="bergen-content">   
+                 
+<div class="container-inner">	
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="text-center">
+                <strong>Viewing post categorized under: Noticias</strong>
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="container-inner">	
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="post-5245 post type-post status-publish format-standard has-post-thumbnail hentry category-noticias category-slider tag-agua tag-aquafondo tag-calaguaya tag-calahuaya tag-cambio tag-chilca tag-climatico tag-hidrica tag-lima tag-matorrales tag-seguridad tag-tnc blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="907" height="596" src="https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1.jpg 907w, https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1-300x197.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1-768x505.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1-640x421.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1-420x276.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1-555x365.jpg 555w" sizes="(max-width: 907px) 100vw, 907px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/11/Limpieza-del-rio-Rimac-4-1.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/%f0%9f%8c%b1trascendiendo-a-traves-del-aprendizaje-medidas-de-adaptacion-al-cambio-climatico-en-chilca/">🌱Trascendiendo a través del aprendizaje: Medidas de adaptación al cambio climático en Chilca</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 5 noviembre, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>La Comunidad Campesina de San Francisco de Calaguaya, ubicada en Chilca, se enfrenta a múltiples riesgos ocasionados por los efectos del cambio climático, entre ellos la falta de agua. A través del proyecto “Conservación de matorrales para la seguridad hídrica en la cuenca alta del río Chilca” desarrollado por AQUAFONDO, organizamos talleres en medidas de [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/%f0%9f%8c%b1trascendiendo-a-traves-del-aprendizaje-medidas-de-adaptacion-al-cambio-climatico-en-chilca/">Read More</a>
+
+</div><div class="post-5236 post type-post status-publish format-standard has-post-thumbnail hentry category-noticias category-slider tag-agua tag-aquafondo tag-calaguaya tag-campesina tag-chilca tag-comunidades tag-hidrica tag-infiltracion tag-manantial tag-seguridad tag-siembra-de-agua tag-tnc blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="855" src="https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-1140x855.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-1140x855.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-300x225.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-768x576.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-1024x768.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-640x480.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-420x315.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco-555x416.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/10/Quebrada-Chanco.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/conservamos-mas-areas-naturales-y-recuperamos-mas-agua-%f0%9f%8c%b1%f0%9f%92%a7/">Conservamos más áreas naturales y recuperamos más agua 🌱💧</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 30 octubre, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>En la Comunidad Campesina de San Francisco de Calaguaya, ubicada en la Cuenca de #Chilca a 4,300 m.s.n.m, desarrollamos acciones de protección y conservación de 50 hectáreas de pajonales y matorrales, contribuyendo con: ✅La infiltración de más de 20 mil m3 de agua en el subsuelo, la cual brotará en manantiales aguas abajo, aportando al río Chilca. [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/conservamos-mas-areas-naturales-y-recuperamos-mas-agua-%f0%9f%8c%b1%f0%9f%92%a7/">Read More</a>
+
+</div><div class="post-5203 post type-post status-publish format-standard has-post-thumbnail hentry category-noticias category-slider tag-agua tag-ana tag-aquafondo tag-contaminacion tag-feria-vivo-por-el-rimac tag-lima tag-limpieza tag-peru tag-reserva tag-rimac tag-rio tag-sunass blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="761" src="https://aquafondo.org.pe/wp-content/uploads/2019/10/3-1140x761.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/10/3-1140x761.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/10/3-300x200.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/10/3-768x513.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/10/3-1024x684.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/10/3-640x427.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/10/3-420x280.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/10/3-555x370.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/10/3.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/aquafondo-en-la-semana-del-rio-rimac/">¡AQUAFONDO en la Semana del Río Rímac!</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 15 octubre, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>Felicitamos al Consejo de Recursos Hídricos de Cuenca Interregional Chillón Rímac Lurín por la organización de la Semana del Río Rímac, iniciativa desarrollada con la intención de crear conciencia en la población sobre el cuidado y preservación de nuestro río. Agradecemos el permitirnos participar en cada una de sus actividades, entre ellas la inauguración con la Muestra Museográfica del Río [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/aquafondo-en-la-semana-del-rio-rimac/">Read More</a>
+
+</div><div class="post-5195 post type-post status-publish format-standard has-post-thumbnail hentry category-noticias category-prensa category-publicaciones category-slider tag-agua tag-hidrica tag-huella tag-lima tag-ods tag-peru tag-saneamiento blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="642" src="https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-1140x642.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-1140x642.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-300x169.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-768x432.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-1024x576.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-640x360.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-420x236.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1-555x312.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/09/Sin-título-1.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/los-ods-y-su-relacion-con-el-agua/">Los ODS y su relación con el agua</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 25 septiembre, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt">https://issuu.com/aquafondolima/docs/las_ods_y_el_agua</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/los-ods-y-su-relacion-con-el-agua/">Read More</a>
+
+</div><div class="post-5181 post type-post status-publish format-standard has-post-thumbnail hentry category-noticias category-slider tag-aquafondo tag-aquagol tag-backus tag-callao tag-compitiendoporelagua tag-cuidado-del-agua tag-cultura-del-agua tag-escolares tag-rotoplas tag-sedapal blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="641" src="https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-1140x641.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-1140x641.png 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-300x169.png 300w, https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-768x432.png 768w, https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-1024x575.png 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-640x360.png 640w, https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-420x236.png 420w, https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182-555x312.png 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/09/IMG_3182.png'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/segunda-edicion-de-aquagol-compitiendo-por-el-agua/">Segunda Edición de AQUAGOL “Compitiendo por el agua”</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 19 septiembre, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>De su cuidado depende nuestro futuro. Bajo el lema Compitiendo por el Agua, se realizó el lanzamiento de la segunda edición del Concurso Escolar AQUAGOL, organizado por AQUAFONDO. Este evento se llevó a cabo en I.E. N° 5031 César Vallejo del Callao, contando con la participación de más de 100 niños y niñas de 6º [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/segunda-edicion-de-aquagol-compitiendo-por-el-agua/">Read More</a>
+
+</div><div class="post-5151 post type-post status-publish format-standard has-post-thumbnail hentry category-noticias category-slider tag-agua tag-ana tag-aquafondo tag-azul tag-certificado tag-empresas tag-giz tag-huella-hidrica tag-kallpa tag-lima tag-nestle tag-ptar tag-reuso tag-tratada tag-tren blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="435" src="https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-1140x435.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-1140x435.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-300x115.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-768x293.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-1024x391.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-640x244.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-420x160.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2-555x212.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/09/Auditorio2.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/3er-encuentro-de-empresas-hidricamente-responsables/">Instituciones reafirman su compromiso por el agua durante  el 3er Encuentro de Empresas Hídricamente Responsables</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 5 septiembre, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>Buscando sensibilizar al sector privado, en un contexto de crisis hídrica, la Autoridad Nacional del Agua &#8211; ANA y AQUAFONDO, organizaron el 3er Encuentro de Empresas Hídricamente Responsables. Durante el inicio del evento, el Jefe de la ANA, Ing. Walter Obando y la Directora Ejecutiva de AQUAFONDO, Econ. Mariella Sánchez, manifestaron el compromiso de las [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/3er-encuentro-de-empresas-hidricamente-responsables/">Read More</a>
+
+</div><div class="post-5143 post type-post status-publish format-standard has-post-thumbnail hentry category-cuadros category-noticias category-slider tag-agua tag-amunas tag-aquafondo tag-cambio-climatico tag-cosecha tag-minagri tag-recursos-hidricos tag-sequia tag-siembra blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="855" src="https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-1140x855.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-1140x855.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-300x225.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-768x576.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-1024x768.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-640x480.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-420x315.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia-555x416.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_0657-copia.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/declaran-de-interes-nacional-practica-ancestral-siembra-y-cosecha-de-agua-para-asegurar-recurso-hidrico/">Declaran de interés nacional práctica ancestral: Siembra y cosecha de agua para asegurar recurso hídrico</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 9 agosto, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>Nos sentimos orgullosos de las acciones que venimos ejecutando cuenca arriba, mejorando la calidad de vida de los pobladores en estas zonas y procurando más agua para Lima. Celebramos la Declaración de Interés Nacional y Necesidad Pública la Implementación de la Siembra y Cosecha de Agua, en la Ley 30989. La ley promulgada  también declara [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/declaran-de-interes-nacional-practica-ancestral-siembra-y-cosecha-de-agua-para-asegurar-recurso-hidrico/">Read More</a>
+
+</div><div class="post-5119 post type-post status-publish format-standard has-post-thumbnail hentry category-cuadros category-noticias category-slider tag-agua tag-ana tag-aquafondo tag-autoridad-nacional-del-agua tag-backus tag-bmub tag-cambio-climatico tag-huarochiri tag-infraestructura-verde tag-lima tag-recursos-hidricos tag-san-mateo-de-huanchor tag-tnc blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="855" src="https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-1140x855.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-1140x855.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-300x225.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-768x576.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-1024x768.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-640x480.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-420x315.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843-555x416.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/07/IMG_20190701_111843.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/juntosporelagua-enfrentamos-la-escasez-de-agua-en-san-mateo-de-huanchor-%f0%9f%99%8c%f0%9f%92%a7/">Juntos por el agua, enfrentamos la escasez de agua en San Mateo de Huanchor 🙌💧</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 5 julio, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>&nbsp; &#8220;No podemos sembrar debido a la falta de lluvias, pero gracias a los proyectos de siembra y cosecha de agua que desarrolla Aquafondo, vamos a poder regar nuestros campos y ampliaremos nuestra frontera agrícola&#8221;, dice Saturnino Ríos, Presidente de la C.C. San Mateo de Huanchor. La Comunidad de San Mateo de Huanchor y su [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/juntosporelagua-enfrentamos-la-escasez-de-agua-en-san-mateo-de-huanchor-%f0%9f%99%8c%f0%9f%92%a7/">Read More</a>
+
+</div><div class="post-5107 post type-post status-publish format-standard has-post-thumbnail hentry category-cuadros category-noticias category-slider tag-agua tag-aquafondo tag-cosecha tag-fondo-de-las-americas tag-fundo-cosecha-del-futuro tag-jauja tag-nestle tag-nestle-peru tag-san-pedro-de-casta tag-siembra blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="665" src="https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-1140x665.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-1140x665.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-300x175.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-768x448.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-1024x598.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-640x373.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-420x245.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044-555x324.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/06/IMG_4044.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/desde-san-pedro-de-casta-hasta-jauja%f0%9f%92%a7%f0%9f%8c%bf/">Desde San Pedro de Casta hasta Jauja!💧🌿</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 28 junio, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>16 comuneros y comuneras de San Pedro de Casta, visitaron, la semana pasada, el Fundo “La cosecha del futuro” en Jauja. Esta pasantía, organizada por AQUAFONDO, tuvo como finalidad contribuir al desarrollo de capacidades en manejo sostenible de los recursos hídricos, de nuestros comuneros y les permitió conocer de cerca el modelo integral de retención de [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/desde-san-pedro-de-casta-hasta-jauja%f0%9f%92%a7%f0%9f%8c%bf/">Read More</a>
+
+</div><div class="post-5095 post type-post status-publish format-standard has-post-thumbnail hentry category-cuadros category-noticias category-slider tag-aquafondo tag-cachu-cachu tag-cosecha-de-agua tag-lagunas tag-lima tag-marcahuasi tag-represamiento tag-san-pedro-de-casta tag-siembra-de-agua tag-the-nature-conservancy tag-tnc blog-article">
+            <div class='blog-article-thumbnail'>
+            <img width="1140" height="855" src="https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-1140x855.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-1140x855.jpg 1140w, https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-300x225.jpg 300w, https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-768x576.jpg 768w, https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-1024x768.jpg 1024w, https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-640x480.jpg 640w, https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-420x315.jpg 420w, https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10-555x416.jpg 555w" sizes="(max-width: 1140px) 100vw, 1140px" />                <div class='blog-article-hover'>
+                    <a class='fancybox-blog-gallery zoom-action' href='https://aquafondo.org.pe/wp-content/uploads/2019/06/Fotografia-semana-05-y-06-10.jpg'><i class='mt-icons-align-left'></i></a>
+                </div>	
+                    </div>
+        
+    <div class="blog-article-details">
+
+        <h4><a href="https://aquafondo.org.pe/tarea-cumplida-mas-agua-para-casta-y-para-lima-tambien%f0%9f%92%a7/">¡Tarea cumplida! ¡Más agua para Casta y para Lima también!💧</a></h4>
+
+        <p><i class='fa fa-calendar-o'></i> 17 junio, 2019 <span> 
+                <i class='fa fa-star-o'></i> Paloma Maturana</span> 
+            <span><i class='fa fa-comment-o'></i> No Comments</span></p>
+
+    </div>
+
+    <div class="bergen-article-excerpt"><p>Ver concluida la obra de represamiento de la laguna Cachu Cachu, a más de 3900 m de altura que permitirá retener más de 27 mil m3 de agua nos llena de satisfacción y lo compartimos con todos ustedes. “El agua es importante para nuestra comunidad, sobre todo cuando nos dedicamos a la agricultura y la [&hellip;]</p>
+</div>
+
+    <a class="bergen-read-more" href="https://aquafondo.org.pe/tarea-cumplida-mas-agua-para-casta-y-para-lima-tambien%f0%9f%92%a7/">Read More</a>
+
+</div><br class="clear_bergen"/><ul class="pagination fixed"><li class="active"><a href='https://aquafondo.org.pe/category/noticias/'>1</a></li><li><a href='https://aquafondo.org.pe/category/noticias/page/2/'>2</a></li><li><a href='https://aquafondo.org.pe/category/noticias/page/3/'>3</a></li><li><a href='https://aquafondo.org.pe/category/noticias/page/4/'>4</a></li><li><a href='https://aquafondo.org.pe/category/noticias/page/12/' title='Last page'>&gt;</a></li></ul>
+        </div>	
+    </div>
+</div>
+</div><!-- CONTENT -->
+
+<!-- FOOTER -->
+<footer>         
+            <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                                            <div class="col-sm-3" id="footer-bottom-widget-area-1">
+
+                            <div id="text-9" class="widget widget_text">			<div class="textwidget"><div class="footer-date">
+<a title="Aquafondo" href="#"><img src="https://aquafondo.org.pe/wp-content/uploads/2016/11/aquafondo_logo_blando.png" alt="Aquafondo" /></a>
+</div></div>
+		</div>
+                        </div>
+                                                <div class="col-sm-3" id="footer-bottom-widget-area-2">
+
+                            <div id="text-12" class="widget widget_text">			<div class="textwidget"><div class="footer-date">
+<p>Av. José Toribio Polo 327, Miraflores </p>
+<p>Teléfono: 51 1 7820502</p>
+<p>Email: contacto@aquafondo.org.pe</p>
+<p>Horario de atención: </p>
+<p>Lunes a Jueves: 08:00 - 17:00</p>
+<p>Viernes: 08:00 - 14:00</p>
+</div></div>
+		</div>
+                        </div>
+                                                <div class="col-sm-3" id="footer-bottom-widget-area-3">
+
+                            <div id="bergen_social_media_widget-3" class="widget widget_bergen_social_media_widget">        <div class="social-media">
+
+            <h4 class="widget-title">Síguenos<span class="bergen-green">.</span></h4>
+                            <a href="https://www.facebook.com/aquafondo/" class="facebook" target="_blank">
+                    <i class="mt-icons-facebook"></i>
+                </a>
+            
+                            <a href="https://twitter.com/aquafondolima" class="twitter" target="_blank">
+                    <i class="mt-icons-twitter"></i>
+                </a>
+            
+            
+                            <a href="https://www.linkedin.com/company/10332417" class="linkedin" target="_blank">
+                    <i class="mt-icons-linkedin"></i>
+                </a>
+            
+                            <a href="https://www.youtube.com/channel/UCcsokZHmuxT-ZSgFz-NehOQ" class="youtube" target="_blank">
+                    <i class="mt-icons-youtube-play"></i>
+                </a>
+            
+            
+                            <a href="https://www.instagram.com/aquafondo/" class="instagram" target="_blank">
+                    <i class="mt-icons-instagram"></i>
+                </a>
+            
+        </div>
+
+        </div>
+                        </div>
+                                                <div class="col-sm-3" id="footer-bottom-widget-area-4">
+
+                            <div id="text-10" class="widget widget_text">			<div class="textwidget"><div class="footer-date">
+<p>Elaborado por La Agencia Digital</p>
+<p>Todos los Derechos Reservados</p>
+</div></div>
+		</div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+</footer><!-- FOOTER -->
+
+</div><!-- PAGE-WRAPPER -->
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scriptParams = {"google_search_engine_id":""};
+/* ]]> */
+</script>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/aquafondo.org.pe\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+
+
+<script type='text/javascript' src='//maps.google.com/maps/api/js?sensor=false&#038;language=en&#038;ver=5.1.3'></script>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bergen_ajax = {"bergen_ajax_call_nonce":"5447b5c86d","ajaxurl":"https:\/\/aquafondo.org.pe\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bergen_vars = {"bergen_sticky":"on","close_image":"https:\/\/aquafondo.org.pe\/wp-content\/themes\/bergen-theme\/layouts\/images\/close.png"};
+/* ]]> */
+</script>
+
+
+<script type="text/javascript" src="https://aquafondo.org.pe/wp-content/cache/minify/7da5b.js"></script>
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Almacenamiento en caché de objetos 266/565 objetos que utilizan disk
+Page Caching using disk: enhanced 
+Minimizado usando disk
+Caching de base de datos 9/92 consultas en 0.079 segundos usando disk
+
+Served from: aquafondo.org.pe @ 2019-11-10 17:35:22 by W3 Total Cache
+-->

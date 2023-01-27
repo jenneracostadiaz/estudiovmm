@@ -1,0 +1,9 @@
+�K�]<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:4:"5221";s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2019-10-16 16:16:33";s:13:"post_date_gmt";s:19:"2019-10-16 16:16:33";s:12:"post_content";s:1019:"&nbsp;
+<div id="content" class="style-scope ytd-expander">
+<div id="description" class="style-scope ytd-video-secondary-info-renderer">José Fernández, desde Australia, pone en valor nuestro trabajo y los beneficios de implementar acciones de protección y uso eficiente de nuestros recursos hídricos. Desarrollar proyectos como la rehabilitación de amunas, reservorios y sistemas de riego eficiente, desarrollados de la mano y en estrecha colaboración con la Comunidad Campesina, nos permite mejorar la calidad de vida de nuestros comuneros a la vez que generamos ¡más agua para Lima! Orgullosos de José Fernández, cursando Maestría en Manejo Integrado del Agua con el Intenational Water Centre.</div>
+</div>
+<div id="always-shown" class="style-scope ytd-metadata-row-container-renderer"></div>
+<div id="collapsible" class="style-scope ytd-metadata-row-container-renderer">
+<h4 id="title" class="style-scope ytd-metadata-row-renderer">Categoría</h4>
+</div>
+https://www.youtube.com/watch?v=J6CA8OvXI44";s:10:"post_title";s:40:"San Pedro de Casta presente en Australia";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:6:"closed";s:11:"ping_status";s:6:"closed";s:13:"post_password";s:0:"";s:9:"post_name";s:40:"san-pedro-de-casta-presente-en-australia";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2019-10-16 16:31:01";s:17:"post_modified_gmt";s:19:"2019-10-16 16:31:01";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:32:"https://aquafondo.org.pe/?p=5221";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

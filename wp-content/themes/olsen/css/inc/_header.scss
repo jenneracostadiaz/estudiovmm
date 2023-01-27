@@ -1,0 +1,41 @@
+/* -----------------------------------------
+	03. Header
+----------------------------------------- */
+.site-bar {
+	border-top: solid 1px #ebebeb;
+	border-bottom: solid 1px #ebebeb;	
+	padding: 13px 0;
+	z-index: 10000000; //crazy high just to cover crazy plugins. oh well.
+
+	.nav {
+		float: left;
+		width: 60%;
+		padding-top: 3px;	
+	}
+
+	&.is_stuck {
+		position: fixed !important;
+		top: 0 !important;
+		background-color: #FFF;
+
+		.admin-bar & {
+			top: 32px !important;
+		}
+	}
+}
+
+.site-logo {
+	padding: 30px;
+	text-align: center;
+
+	a {
+		display: block;
+	}
+
+	p {
+		font-size: 10px;		
+		color: #7e7e7e;
+		letter-spacing: 3px;
+		margin-bottom: 0;
+	}
+}

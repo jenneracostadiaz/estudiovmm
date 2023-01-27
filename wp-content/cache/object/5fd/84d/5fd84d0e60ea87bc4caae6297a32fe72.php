@@ -1,0 +1,15 @@
+�K�]<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:9;s:11:"post_author";s:1:"2";s:9:"post_date";s:19:"2015-08-28 15:57:56";s:13:"post_date_gmt";s:19:"2015-08-28 15:57:56";s:12:"post_content";s:1937:"El viernes 28 de agosto se realizó el Foro denominado Retos y Desafíos de los Mecanismos de Retribución por Servicios Ecosistémicos (MRSE) en el Distrito de Santa Eulalia. El objetivo del encuentro fue compartir experiencias y conocimientos para contribuir al desarrollo viable de proyectos de mecanismos de retribución en cuencas hidrográficas. Estos mecanismos son una herramienta clave para retribuir a aquellos pobladores de las partes altas de las cuencas, cuyas acciones están encaminadas a preservar  la cantidad y calidad del agua.
+
+Se contó con la presencia de las autoridades y líderes locales y regionales de las cuencas de Santa Eulalia y Lurín,  así como de  representantes y equipos técnicos de las principales instituciones que trabajan a favor de la buena gestión y manejo de los recursos hídricos desde diferentes proyectos en la zona.
+
+Entre los organizadores del evento estuvieron Global Water Partnership, IDMA, The Nature Conservancy,  Aquafondo - Fondo de Agua para Lima y Callao. y se contó además con el apoyo de SUNASS, USAID, COSUDE,  Sedapal, CONDESAN y las Mancomunidades de Lurín y Santa Eulalia.
+
+Las exposiciones realizadas por especialistas nacionales e internacionales se enmarcaron en tres paneles temáticos:
+<ol>
+	<li>Beneficios y retos de los MRSE</li>
+	<li>Posibilidades y desafíos de los MRSE</li>
+	<li>Gestión de los recursos naturales: siembra y cosecha del agua.</li>
+</ol>
+Durante su participación, Aldo Cárdenas de TNC nos comentó acerca de la labor de AQUAFONDO, su funcionamiento y el Portafolio de Proyectos de infraestructura verde que se presentó a SEDAPAL y que serían ejecutados en la cuenca del río Rímac.
+
+Compartimos una productiva mañana que finalizó con la facilitación de una reunión entre autoridades, representantes e instituciones locales para la constitución de un Comité Impulsor de MRSE para la subcuenca de Santa Eulalia.";s:10:"post_title";s:85:"Foro Retos y Desafíos de los Mecanismos de Retribución por Servicios Ecosistémicos";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:82:"foro-retos-y-desafios-de-los-mecanismos-de-retribucion-por-servicios-ecosistemicos";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2016-01-29 02:07:44";s:17:"post_modified_gmt";s:19:"2016-01-29 02:07:44";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:48:"http://localhost/~C3PO/bluebox/aquafondo_wp/?p=9";s:10:"menu_order";i:0;s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}

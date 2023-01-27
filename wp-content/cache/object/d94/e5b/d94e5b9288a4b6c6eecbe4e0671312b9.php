@@ -1,0 +1,15 @@
+L�]<?php exit; ?>a:1:{s:7:"content";a:11:{s:10:"_edit_lock";a:1:{i:0;s:12:"1455906132:2";}s:10:"_edit_last";a:1:{i:0;s:1:"2";}s:17:"_wp_page_template";a:1:{i:0;s:20:"page-que_hacemos.php";}s:7:"portada";a:1:{i:0;s:3:"666";}s:8:"_portada";a:1:{i:0;s:19:"field_5643c41cb848e";}s:7:"resumen";a:1:{i:0;s:0:"";}s:8:"_resumen";a:1:{i:0;s:19:"field_5643c42db848f";}s:9:"contenido";a:1:{i:0;s:2508:"<span lang="ES-PE"><strong>AQUAFONDO</strong> facilita procesos y promueve acciones que fortalezcan la buena gobernanza de los recursos hídricos en las cuencas de Lima para asegurar el uso y aprovechamiento eficiente y concertado del agua superficial, subterránea y atmosférica, la conservación y recuperación de sus fuentes, de los ecosistemas hídricos y de los servicios que estos brindan a la sociedad. </span>
+
+<span lang="ES-PE">Además, promueve la Gestión Integrada de los Recursos Hídricos establecida en la normatividad vigente, la participación, integración y concertación en la toma de decisiones facilitando la interacción entre el sector público, como la ANA, Gobiernos Regionales y Gobiernos Locales, con los demás actores y sectores involucrados en la gestión del agua, de manera que se asegure un uso equitativo, eficiente y sostenible de los recursos hídricos en las cuencas de Chillón, Rímac y Lurín.</span>
+
+<strong>AQUAFONDO</strong>, en el marco del proyecto conjunto con la <strong>Fundación Futuro Latinoamericano </strong>y el financiamiento de<strong> Fundación Tinker</strong>, promueve y facilita el proceso de conformación, creación e implementación del <strong>Consejo de Recursos Hídricos de Cuenca Interregional Chillón, Rímac y Lurín (CRHC CHIRILU).</strong>
+
+Dicho proceso se realizó por medio del diálogo y fortalecimiento de capacidades de los miembros del Consejo; de esta manera, se siguió la normatividad vigente. Gracias a esto, se logró la identificación y participación de los actores de las cuencas de Lima, la elección de los miembros del Consejo y la presentación del Expediente de creación.
+
+En los siguientes gráficos se muestran esquemas del proceso seguido, desde la facilitación y la composición del <strong>CRHC CHIRILU.</strong>
+
+<img class="aligncenter wp-image-677 size-full" src="http://aquafondo.org.pe/wp-content/uploads/2016/02/FFLA-Flujo1.png" alt="FFLA-Flujo1" width="696" height="421" /> <img class="aligncenter wp-image-678 size-full" src="http://aquafondo.org.pe/wp-content/uploads/2016/02/FFLA-Flujo2.png" alt="FFLA-Flujo2" width="646" height="554" />
+
+Conoce más acerca del Proceso de conformación del Consejo de Recursos Hídricos Cuenca Interregional Chillón- Rímac y Lurín, <a href="http://aquafondo.org.pe/2016/02/08/proceso-de-conformacion-del-consejo-de-recursos-hidricos-cuenca-interregional-chillon-rimac-y-lurin-peru/"><span style="color: #3366ff;">aquí</span>.</a>
+
+&nbsp;";}s:10:"_contenido";a:1:{i:0;s:19:"field_5643c440b8490";}s:8:"proyecto";a:1:{i:0;s:1:"0";}s:9:"_proyecto";a:1:{i:0;s:19:"field_5639124212738";}}}

@@ -1,0 +1,4511 @@
+
+<!doctype html>
+<html lang="es">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<meta name="theme-color" content="#264a64" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="pingback" href="https://estudiovmm.com/xmlrpc.php">
+	<link data-minify="1" rel="stylesheet" href="https://estudiovmm.com/wp-content/cache/min/1/aos@next/dist/aos.css?ver=1673473464" />
+
+	<title>Políticas de privacidad &#8211; Valverde, Morales &amp; Marticorena</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Valverde, Morales &amp; Marticorena &raquo; Feed" href="https://estudiovmm.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Valverde, Morales &amp; Marticorena &raquo; Feed de los comentarios" href="https://estudiovmm.com/comments/feed/" />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/estudiovmm.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://estudiovmm.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://estudiovmm.com/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='wpos-magnific-style-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/magnific-popup.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wpos-slick-style-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/slick.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='aigpl-public-css-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/plugins/album-and-image-gallery-plus-lightbox/assets/css/aigpl-public.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='contact-form-7-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=1673473464' type='text/css' media='all' />
+<link rel='stylesheet' id='ci-google-font-css' href='//fonts.googleapis.com/css?family=Lora%3A400%2C700%2C400italic%2C700italic%7CLato%3A400%2C400italic%2C700%2C700italic&#038;ver=6.1.1' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='ci-base-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/themes/olsen/css/base.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/themes/olsen/css/font-awesome.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='magnific-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/themes/olsen/css/magnific.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='slick-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/themes/olsen/css/slick.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='mmenu-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/themes/olsen/css/mmenu.css?ver=1673473464' type='text/css' media='all' />
+<link rel='stylesheet' id='justifiedGallery-css' href='https://estudiovmm.com/wp-content/themes/olsen/css/justifiedGallery.min.css?ver=3.6.0' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='ci-style-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/themes/olsen/style.css?ver=1673473464' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='js_composer_front-css' href='https://estudiovmm.com/wp-content/cache/min/1/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=1673473464' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://estudiovmm.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/modernizr.js?ver=2.8.3' id='modernizr-js' defer></script>
+<link rel="https://api.w.org/" href="https://estudiovmm.com/wp-json/" /><link rel="alternate" type="application/json" href="https://estudiovmm.com/wp-json/wp/v2/pages/10972" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://estudiovmm.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://estudiovmm.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel="canonical" href="https://estudiovmm.com/politicas-de-privacidad/" />
+<link rel='shortlink' href='https://estudiovmm.com/?p=10972' />
+<link rel="alternate" type="application/json+oembed" href="https://estudiovmm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Festudiovmm.com%2Fpoliticas-de-privacidad%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://estudiovmm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Festudiovmm.com%2Fpoliticas-de-privacidad%2F&#038;format=xml" />
+<style id="mystickymenu" type="text/css">#mysticky-nav { width:100%; position: static; }#mysticky-nav.wrapfixed { position:fixed; left: 0px; margin-top:0px;  z-index: 199990; -webkit-transition: 0s; -moz-transition: 0s; -o-transition: 0s; transition: 0s; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)"; filter: alpha(opacity=95); opacity:0.95; background-color: #264a64;}#mysticky-nav.wrapfixed .myfixed{ background-color: #264a64; position: relative;top: auto;left: auto;right: auto;}#mysticky-nav .myfixed { margin:0 auto; float:none; border:0px; background:none; max-width:100%; }</style>			<style type="text/css">
+																															</style>
+			<style type="text/css">			.sidebar {
+				background-color: #f6f6f6;
+			}
+			.home #site-content {
+    border-top: none !important;
+}
+#pacopaco3 {
+display: none;
+}
+div#recove {
+    margin-top: -12%;
+}
+div#recove2 {
+    margin-top: -26%;
+margin-bottom: 80px;
+}
+#ichi {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/28_VMM_Equipo-de-Abogados_Estrategia.jpg);
+    background-size: 100%;
+    background-position: top;
+    padding-top: 6% !important;
+    padding-bottom: 10% !important;
+    height: 60vh !important;
+    background-repeat: no-repeat;
+    background-position-y: 64%;
+}
+
+li.ui-tabs-active a {
+   font-family: 'Spartan-semibold';
+}
+.navigation > li.current_page_item > a, .navigation > li.current-menu-item > a {
+    /* background-color: #000 !important; */
+    border-bottom: 2px solid #fff !important;
+}
+
+.ijole a {
+    white-space: break-spaces;
+    font-family: 'Spartan-regular';
+    text-transform: capitalize;
+    color: #264a64;
+    border-left: 5px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.ijole a:hover, .ijole a:active, .ijole a:focus  {
+     border-left: 5px solid #000;
+}
+.ijole a:hover, .ijole a:active, .ijole a:focus  {
+     border-left: 5px solid #d36667;
+}
+.ijole li {
+    border-top: 1px solid #264a64;
+    width: 300px !important;
+}
+.centrino {
+display: flex;
+text-align: center; 
+height: 100vh;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+.centrino h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Heavitas-semibold';
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.centrino h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Heavitas-semibold';
+    font-size: 2.8em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.centrino a {
+    width: 155px !important;
+    border: solid #ffffff54 3px;
+    padding: 15px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Heavitas-light';
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    display: flex;
+    flex-direction: column;
+    float: left !important;
+}
+.slidein {
+            animation-name: inherit !important;
+        }
+.redes div:firts-child {
+    width: 33.33% !important;
+}
+#mi_imagen img {
+    width: 0px !important;
+    height: 0px !important;
+}
+.wpcf7-form h5 {
+    width: 50% !important;
+    float: left;
+}
+input, textarea, input:hover, textarea:hover {
+    background-color: #fff0 !important;
+}
+
+
+
+.navigation a:active {
+    border-bottom: 0px solid #fff;
+}
+p {
+    text-align: justify !important;
+}
+.acheeeo > .wpb_wrapper > .wpb_tabs_nav > li.ui-tabs-active  {
+    border-bottom: 2px !important;
+}
+a.mm-title {
+    display: none !important;
+}
+.mm-menu .mm-navbar .mm-btn:before {
+border-color: #d36667;
+    width: 10px;
+    padding: 9px;
+    margin-top: 10px;
+}
+.mm-menu .mm-navbar > *, .mm-menu .mm-navbar a {
+    color: #d36667;
+    font-size: 2em !important;
+    font-family: 'Heavitas-light';
+    margin-top: 20px !important;
+}
+.mm-navbar.mm-hasbtns {
+    padding: 0 0px;
+    border: 0px !important;
+}
+.grecaptcha-badge {
+    display: none !important;
+}
+#carga select {
+    border-color: #93a7ba;
+}
+.exo2 {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2021/12/comillas.png);
+    background-repeat: no-repeat;
+    background-position-x: 73%;
+    background-size: 39%;
+    background-position-y: 11%;
+margin-top: 5%;
+}
+div#mysticky-wrap {
+    height: 0px !important;
+}
+.vaca h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Heavitas-semibold';
+    overflow-wrap: inherit;
+}
+.chapalo2 span {
+    border-bottom: solid 1px #93a7ba;
+    padding-bottom: 10px;
+}
+.navigation > li ul a:hover {
+    text-align: center !important;
+}
+.container {
+    width: 100%;
+max-width: 1280px;
+min-width: 980px;
+}
+.wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav a {
+    text-transform: initial !important;
+}
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required {
+    width: 100%;
+    padding: 8px;
+    background-color: #fff0;
+    border: solid 1px #ffffff57;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    padding-bottom: 11px;
+}
+#llevame p {
+    color: #675261;
+}
+
+        
+        @keyframes slidein {
+            from {
+                margin-bottom: 19%;
+            }
+            to {
+                margin-botton: 0%;
+            }
+        }
+        
+        .slideinOpacit {
+            animation-name: slideinOpacit;
+                padding-bottom: 53%;
+        }
+   
+@keyframes slideinOpacit {
+            from {
+                opacity: 1;
+                padding-top: 10%;
+            }
+            to {
+                opacity: 0;
+                padding-top: 0%;
+            }
+        }
+
+
+p {
+    line-height: 2em;
+    color: #264a64;
+font-size: 12px;
+}
+h2 {
+    line-height: 1.2em;
+margin-top: 40px;
+}
+h3 {
+    font-size: 22px;
+    font-family: 'Heavitas-light';
+}
+.movilno {
+    display: contents;
+}
+.movilsi {
+    display:none;
+}
+#memow p {
+ text-align: justify;
+}
+.abobor {
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, #dcb595 0%, #dcb595 4%, transparent 2%, transparent 98%, #dcb595 98%, #dcb595 100%);
+    -webkit-border-image: -webkit-linear-gradient(45deg, #dcb595 0%, #dcb595 2%, transparent 2%, transparent 98%, #dcb595 98%, #dcb595 100%);
+    border-image-slice: 1;
+    padding: 40px !important;
+    margin: 0 !important;
+}
+.acheeeo > .wpb_tour_tabs_wrapper > .ui-tabs-panel {
+    border-top: 1px solid #264a64 !important;
+    border-bottom: 1px solid #264a64 !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    float: right !important;
+}
+.afondado {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/24_VMM_Lobby.jpg);
+    background-size: cover;
+    max-width: max-content !important;
+}
+.abobor div {
+    margin: 0;
+}
+.aboboroj {
+    border: 3px solid transparent;
+    border-image: linear-gradient(315deg, #d36667 0%, #d36667 4%, transparent 2%, transparent 98%, #d36667 98%, #d36667 100%);
+    -webkit-border-image: -webkit-linear-gradient(315deg, #d36667 0%, #d36667 2%, transparent 2%, transparent 98%, #d36667 98%, #d36667 100%);
+    border-image-slice: 1;
+    padding: 40px !important;
+}
+.aboboroj div {
+    margin: 0;
+}
+.fondo {
+    height: 100vh;
+}
+header#masthead {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.chepito {
+    margin-top: -39%;
+}
+.chepito p {
+    color: #fff;
+    max-width: 300px;
+    text-align: right !important;
+    float: right;
+    padding-top: 19%;
+    margin-right: -15%;
+    font-size: 1.2em;
+    line-height: 2.5em !important;
+}
+.chepito h2 {
+    border-left: 3px solid #d36667;
+    padding-left: 20px;
+}
+.chepito2 h2 {
+    border-left: 3px solid #d36667;
+    padding-left: 20px;
+}
+.movilsi {
+ display: none;
+}
+.site-bar .nav {
+    padding-top: 0px;
+}
+#anas {
+    display: none;
+}
+.margen-chico {
+    width: 950px !important;
+    margin: 0 auto !important;
+    margin-top: -10em !important;
+}
+.chifu {
+    background-image: url(http://estudiovmm.com/wp-content/uploads/2021/01/bordes.png);
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.chifu2 {
+    background: #264a64;
+    padding: 75px;
+    min-height: 500px !important;
+    width:  auto;
+    margin: 0 auto !important;
+    padding-bottom: 45px;
+}
+.chifu2 p {
+color: #ffffff;
+}
+#retro {
+    padding-top: 80px;
+    padding-bottom: 300px;
+}
+#contiac {
+    position: absolute;
+     width: 245px;
+    top: inherit;
+    left: 10%;
+    bottom: -2% !important;
+}
+#contiac div {
+    width: 35px;
+    margin-right: 18px;
+}
+.navigation > li ul a {
+    background: #00ffeb;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #004a82;
+    font-family: 'Heavitas-semibold';
+}
+.navigation > li ul a:hover {
+    background: #004a82;
+    color: #fff;
+box-shadow: 3px 3px 18px 0px #0000008f;
+}
+#imagenmaxima img {
+    max-width: 320px;
+}
+
+.cerra {
+    position: fixed;
+    width: 100% !important;
+    z-index: 100000;
+    height: auto;
+    margin-top: 35px;
+}
+#mysticky-nav.wrapfixed img {
+    box-sizing: border-box;
+    display: block;
+    width: 80px;
+    height: 47px;
+    padding-left: 120px;
+    background: url(http://estudiovmm.com/wp-content/uploads/2021/01/log-hover.png);
+    background-size: contain;
+    background-repeat: no-repeat !important;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+.chapalo strong, .chupe strong {
+    font-family: 'Spartan-bold';
+}
+.chupe {
+    border-left: 3px solid #d36667;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+.chapalo {
+    padding-left: 33px;
+}
+.ferrr h2 {
+    font-family: 'Heavitas-bold' !important;
+    font-size: 40px !Important;
+    line-height: 1.2em !important;
+margin-top: 40px !important;
+}
+
+.ferrr h4 {
+font-family: 'Heavitas-semibold' !important;
+font-size: 17px !important;
+}
+
+.ferrr h6 {
+font-family: 'Heavitas-semibold' !important;
+font-size: 17px !important;
+}
+
+p.tagline {
+    display: none !important;
+}
+.amarillo {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.cabezilla h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+}
+.cabezilla {
+    padding-top: 45%;
+}
+#nome img {
+    width: 80%;
+}
+nav.nav {
+    width: 66% !important;
+    float: right !important;
+}
+.nav ul {
+    float: right;
+    margin-right: -5px;
+}
+.navigation ul {
+    min-width: inherit;
+
+    padding: 2px;
+    margin-left: -7px !important;
+}
+.navigation ul {
+    background: transparent;
+}
+.sub-menu li {
+    color: #fff;
+    margin-bottom: -1px;
+    margin-top: 5px;
+    background: transparent;
+}
+#mysticky-nav.wrapfixed ul.sub-menu {
+    background-color: #264a64;
+}
+ul.sub-menu a {
+    color: #fff;
+}
+.sub-menu a {
+    background: #fff0 !important;
+    color: #ffffff6b !important;
+    box-shadow: 0px !important;
+    text-align: center !important;
+}
+.sub-menu a:hover {
+    color: #fff !important;
+    box-shadow: 0px !important;
+    text-align: left !important;
+}
+.navigation > li ul a:hover {
+    box-shadow: none !important;
+}
+.site-logo {
+    padding: 0px;
+    text-align: left;
+}
+.mas2 {
+    width: 25%;
+}
+.menu-lifecare {
+    width: 75% !important;
+    float: left;
+}
+.mas2 img {
+    width: 180px;
+    padding-top: 5px;
+margin-left: -15px;
+}
+.navigation > li {
+    width: fit-content;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navigation > li > a {
+    margin-right: 0;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-transform: initial;
+    font-family: 'Heavitas-semibold';
+}
+
+
+
+li#menu-item-6534 {
+    background-color: #00ffeb;
+    border-radius: 30px;
+}
+li#menu-item-6534 a {
+color: #004a82 !important;
+}
+li#menu-item-6534 a:hover {
+    font-weight: 800 !important;
+}
+.todito {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #264a64;
+    padding-top: 120px;
+padding-bottom: 100px;
+}
+#fefe div {
+    width: 50%;
+}
+.cerra2 {
+    width: 100%;
+    margin: 0 auto;
+max-width: 1280px !important;
+}
+.anchito {
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin: 0 auto;
+}
+.pie2 {
+    display: inline-block;
+    width: 18%;
+    float: left;
+    color: #fff !important;
+}
+.pie2:last-child {
+     width: 19%;
+ }
+.pie2 p {
+    color: #fff;
+    display: block;
+    font-family: 'Spartan-light';
+    line-height: 2.5 !important;
+    text-align: right !important;
+}
+.pie2 a {
+    color: #fff;
+    display: block;
+    font-family: 'Spartan-light';
+    line-height: 2.5;
+    FONT-SIZE: 1.05em;
+
+}
+.pie2 a:hover {
+    font-family: 'Spartan-bold';
+}
+.pie3 {
+    display: inline-block;
+    width: 27%;
+    float: left;
+    color: #fff !important;
+}
+.cierre {
+    width: 100% !important;
+    float: left;
+background-color: #d36667;
+}
+.cierre p, .cierre a {
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.cierre a {
+    font-weight: 700;
+}
+.pie2 h3 {
+    color: #00ffeb;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 0; 
+}
+.pie2 h4 {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Heavitas-bold';
+}
+.pie2 img {
+    width: 60%;
+    padding-bottom: 15px;
+}
+.poco img {
+    width: 35px;
+    border-radius: 67px;
+    background-color: #45a3e8;
+    padding-bottom: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+.tabletsi {
+    display: none !important;
+}
+.menufast {
+    margin-top: 10px;
+}
+.menufast a {
+    float: left;
+    font-size: 14px;
+    display: block;
+    width: 59%;
+    border-bottom: 1px solid #fff;
+    color: #45a3e8;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.rofio h3 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.3em;
+}
+.tp-caption a {
+    color: #fff !important;
+    font-size: 1.5em !Important;
+    line-height: 1.1em !important;
+    font-weight: 600 !important;
+}
+.aigpl-img-caption {
+    padding: 10px 10px !important;
+    width: 80% !important;
+    background: #49ced9 !important;
+    font-weight: 600 !important;
+    margin-left: 10% !important;
+    margin-bottom: 5% !important;
+    border-radius: 30px;
+    color: #004a82 !important;
+    box-shadow: -4px 3px 17px 0px #0006;
+}
+.tp-caption {
+    white-space: inherit !important;
+    text-align: left !important;
+    background-color: rgb(10 10 10 / 60%) !important;
+color: #fff !important;
+    border-left: 10px solid #00ffbf !important;
+    padding-left: 35px !important;
+   padding-right: 35px !important;
+   padding-bottom: 30px !important;
+   padding-top: 30px !important;
+}
+.web {
+    width: 80% !important;
+    margin: 0 auto !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.justi p, .justi li {
+    text-align: justify !important;
+}
+#jepo img {
+    max-width: 350px !important;
+}
+div#acero {
+    margin-bottom: -35px !important;
+}
+#noti1 h5 {
+    color: #fff;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+.ancheee h2 {
+    margin-top: 0px;
+}
+#noti1 h5 strong {
+    color: #00ffbf;
+    font-style: italic;
+}
+.sidebar.sidebar-right .widget {
+    padding: 30px 30px 30px 30px;
+}
+.anchi {
+    width: 70% !important;
+    margin: 0 auto;
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+.anchi2 {
+    width: 82% !important;
+    margin: 0 auto;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+#amu2 h3 {
+    font-size: 4em;
+    color: #fff;
+    font-weight: 800;
+    font-style: italic;
+    line-height: .9em;
+    margin-bottom: 5px;
+}
+#amu2 h4, #amu h3 {
+    color: #fff;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 1.6em;
+}
+#amu h2 {
+    color: #00ffbf;
+    font-size: 4.5em;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+.forma {
+    width: 90% !important;
+    display: block;
+    height: 120px !important;
+}
+.ima {
+    width: 23% !important;
+    float: left;
+    margin: 10px;
+}
+.ima2 {
+    width: 60%;
+float: left;
+}
+.situacion h3 {
+    color: #fff;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 1;
+    font-weight: 800;
+}
+#mueve {
+    padding-left: 18%;
+}
+.situacion h3 strong {
+    color: #00ffeb;
+    font-weight: 300;
+}
+.situacion p {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.1em;
+}
+.ima2 p {
+    color: #00ffeb;
+    font-style: italic;
+}
+#forma2 {
+    padding-left: 10%
+}
+.situacion h4 {
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding-top: 31px;
+}
+.web2 {
+    width: 80% !important;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.web3 {
+    width: 80% !important;
+    margin: 0 auto !important;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+.web4 {
+    width: 80% !important;
+    margin: 0 auto !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.webvideo {
+    width: 60% !important;
+    margin: 0 auto !important;
+}
+div#web3 {
+    width: 70% !important;
+    margin: 0 auto;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.magistral h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1em;
+   color: #00ffbf;
+}
+.magistral h3 strong {
+    font-size: 1.2em;
+    color: #fff;
+}
+.couto {
+    padding-left: 60px !important;
+}
+.magistral h5 {
+    color: #fff;
+    padding-bottom: 10px;
+}
+#iste {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#alto {
+    color: #fff;
+}
+#iste p {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+padding-bottom: 10px !important;
+    margin-top: 0px !important;
+}
+#iste h3 {
+    font-weight: 600;
+    font-size: 2.5em !important;
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+}
+#alto h3 {
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+#alto p {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: -15px;
+}
+#expe {
+    padding-top: 10% !important;
+    padding-bottom: 7% !important;
+}
+#expe h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+padding-bottom: 20px;
+}
+#web4 {
+    width: 80%;
+    margin: 0 auto;
+}
+#web4 img {
+    width: 300px;
+}
+.web5 {
+    width: 70%;
+    margin: 0 auto !important;
+}
+#web5 {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}
+#web5 h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+#ecomo img {
+    width: 85%;
+}
+#degra h2 {
+    font-size: 24px;
+    font-weight: 600;
+    background: #ef4e28;
+    background: linear-gradient(to right, #19cec7, #004a82);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    padding: 0.7em;
+    border-left: 10px solid transparent;
+    border-image: linear-gradient(to right, #19cec7, #004a82);
+    border-image-slice: 1;
+    font-style: italic;
+line-height: 1.1;
+}
+#nosotros h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #004a82;
+}
+#nosotros h3 {
+    font-size: 2.2em;
+    font-weight: 700;
+    font-style: italic;
+    color: #004a82;
+}
+#nosotros h4 {
+    font-size: 1.8em;
+    font-weight: 700;
+    font-style: italic;
+    color: #004a82;
+}
+#mision {
+    margin-top: -105px !important;
+}
+#mision img {
+    width: 70px;
+    margin-bottom: -23px !important;
+    padding-bottom: 0px !important;
+}
+#nosotros2 h3 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #fff;
+}
+#nosotros2 p {
+    color: #fff;
+}
+#eco {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+#eco h3 {
+    text-align: center;
+    font-size: 1.7em;
+    color: #00ffeb;
+    font-style: italic;
+    font-weight: 800;
+}
+#eco h3 strong {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #fff;
+}
+#eco h4 {
+    color: #00ffeb;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0px;
+}
+#eco p {
+    font-size: 1.1em;
+    text-align: center;
+}
+div#ant {
+    width: 37%;
+    float: left;
+}
+div#ant2 {
+    width: 26%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#ant h6 {
+    color: #00ffeb;
+    font-weight: 600;
+    text-align: right;
+    margin: 0px;
+}
+#ant p {
+    text-align: right;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+.derecha p, .derecha h6 {
+    text-align: left !important;
+}
+#grafico div {
+    padding-bottom: 10px !important;
+}
+.padins {
+    padding-top: 7% !important;
+    padding-bottom: 7% !important;
+}
+.padins h3{
+    padding-bottom: 20px !important;
+}
+#escandalo h5 {
+    color: #fff;
+    margin: 0;
+}
+#escandalo h3 {
+    color: #00ffeb;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+#escandalo p {
+    line-height: 1.4em;
+    font-size: 1.1em;
+    margin-top: -15px;
+}
+.noagua {
+    padding-top: 17% !important;
+    padding-bottom: 17% !important;
+}
+.noagua img {
+    width: 60%;
+}
+.noagua h2 {
+    color: #fff;
+    font-size: 4em;
+    font-style: italic;
+    line-height: .9;
+    font-weight: 800;
+}
+.noagua h2 strong {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #ebc076;
+}
+.noagua h5 {
+    color: #fff;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.noagua h5 strong {
+    font-size: 2em;
+}
+.nag3 {
+    padding-top: 30% !important;
+    padding-bottom: 10% !important;
+}
+.noagua h5 strong {
+    font-size: 2em;
+    line-height: 1;
+}
+div#oigame {
+    width: 100% !important;
+    margin: 0 auto;
+    margin-top: 22px;
+    max-width: 1003px;
+}
+.strong-view-id-1 .wpmtst-testimonial-inner {
+    background: #ffffff00 !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+.strong-view.wpmtst-default .wpmtst-testimonial-inner {
+    border: none !important;
+}
+.strong-view.wpmtst-default .wpmtst-testimonial {
+    border: none !important;
+}
+.testimonial p strong {
+    color: #00ffeb;
+    font-style: italic;
+}
+.nag4 {
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+}
+.forma2 {
+    width: 33.3333% !important;
+    float: left !important;
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
+}
+.ima3 {
+    width: 26% !important;
+    float: left;
+padding-right: 2% !important;
+}
+.ima4 {
+    width: 70% !important;
+    float: left;
+padding-left: 2% !important;
+}
+.ima4 h4 {
+    color: #fff !important;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0px;
+}
+.ima4 p {
+    color: #ebc076 !important;
+    line-height: 1.4;
+    font-style: italic;
+    font-size: 1.2em;
+}
+.nag4 h3 {
+    color: #ebc076;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 800;
+}
+.nag4 p {
+    color: #fff;
+    margin-bottom: -15% !important;
+}
+#degra2 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(180deg, #ffffff, #00ffbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.7em;
+    border-left: 10px solid transparent;
+    border-image: linear-gradient(180deg, #ffffff, #00ffbf);
+    border-image-slice: 1;
+    font-style: italic;
+    line-height: 1.1;
+}
+.nag5 {
+padding-top: 10% !Important;
+padding-bottom: 10% !Important;
+}
+.facina {
+    width: 40% !important;
+    margin: 0 auto !important;
+    color: #fff;
+}
+.facina h3 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1;
+}
+.facina h3 strong {
+    color: #ebc076;
+    font-style: italic;
+    font-size: 1.2em;
+}
+#degra2 img {
+    width: 220px;
+    margin-bottom: -30px !important;
+}
+#cambio img {
+    width: 50% !important;
+}
+#paad {
+    padding-top: 10% !important;
+}
+a.vc_general.vc_btn3.vc_btn3-size-sm.vc_btn3-shape-round.vc_btn3-style-custom {
+    font-weight: 700;
+}
+#fca {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2020/11/fondo-azul.png);
+    background-size: 65% 100% !important;
+    background-position: left !important;
+}
+
+#cultu {
+    color: #fff;
+background-color: none !important;
+} 
+#cultu h3 {
+    font-size: 2.7em;
+    font-weight: 800;
+}
+#cultu p strong {
+    color: #00ffeb !important;
+    font-style: italic;
+}
+#amiga h3 {
+    font-size: 2em !important;
+    font-weight: 700;
+    color: #004a82;
+    margin-bottom: -10px;
+}
+#amiga2 h3 {
+    font-size: 2em !important;
+    font-weight: 700;
+    color: #004a82;
+    font-style: italic;
+}
+#fca2 {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2020/11/claro.png);
+    background-size: 65% 100% !important;
+    background-position: left !important;
+    background-repeat: no-repeat;
+}
+#fca2 h3, #fca2 p, #fca2 p strong {
+    color: #004a82 !important;
+}
+.aquafondo {
+    text-align: left;
+    padding: 0;
+}
+h2.aquafondo {
+    font-size: 2.4em;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #004a80;
+}
+time.entry-date.aquafondo {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #00ffeb;
+    padding-left: 10px;
+    border-radius: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #004a82;
+}
+a.antena {
+    color: #004a82;
+}
+a.antena:hover {
+    background: #004a82 !important;
+    color: #fff;
+}
+.entry-tags a, .entry-brands a {
+    background: #00ffeb;
+    color: #004a80;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: initial;
+    font-size: 10px;
+    margin: 3px;
+}
+.aquafondo h4 {
+    font-size: 1.4em;
+    font-weight: 900;
+    font-style: italic;
+}
+time.entry-date {
+    letter-spacing: 0.5px;
+    color: #004a82;
+    font-weight: 600;
+}
+.mejooo a {
+    color: #000;
+}
+.mejooo a:hover {
+    color: #000;
+    font-weight: 500;
+}
+.volver {
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.volver a {
+    background-color: #00ffeb;
+    padding: 13px;
+    text-align: center;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 600;
+    color: #004A84;
+}
+.sidebar.sidebar-right {
+    border-left: none !important;
+}
+#vaca {
+    background-image: url(/wp-content/uploads/2020/12/fondo-vaca.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 500px;
+    height: 500px;
+width: 100% !Important;
+}
+#vaca h3 {
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3em;
+}
+.web6 {
+    width: 80%;
+margin: 0 auto !Important;
+}
+.web7 {
+    width: 70%;
+margin: 0 auto !Important;
+}
+#planta h2 {
+    font-size: 3em;
+    font-weight: 900;
+    background: #ef4e28;
+    background: linear-gradient(to right, #00FF93, #004a82 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    line-height: 1.1;
+}
+#planta img {
+    width: 80% !important;
+}
+#summ p strong {
+    font-style: italic !important;
+}
+#summ p {
+    color: #fff;
+}
+#summ img {
+    width: 95% !important;
+}
+#bulla h2 {
+    font-size: 2.4em;
+    font-weight: 800;
+    color: #004a82;
+    font-style: italic;
+}
+#cambx p {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    font-style: italic;
+}
+#cambx h2 {
+    font-size: 3.6em;
+    font-weight: 900;
+    background: #ef4e28;
+    background: linear-gradient(2.4turn, #00FF93, #45a3e8, #004a82 136%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    line-height: 1.1;
+}
+#apx {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #fff !important;
+    font-style: italic !important;
+}
+#apx h3 {
+    font-weight: 900;
+    font-size: 3.2em;
+}
+#cambx2 h2 {
+    font-size: 4.5em;
+    font-weight: 900;
+    background: #ef4e28;
+    background: linear-gradient(2.4turn, #00FF93, #45a3e8, #004a82 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    line-height: 1.1;
+}
+#cambx2 img {
+    width: 73%;
+    margin-top: 50px;
+}
+#cambx2 p {
+    font-size: 2em;
+    font-style: italic;
+}
+#ayudar h3 {
+    color: #fff;
+    font-style: italic;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+#enfrente {
+    padding-top: 4%;
+}
+#enfrente h3 {
+    color: #004a82;
+    font-size: 4.5em;
+    font-weight: 900;
+    font-style: italic;
+}
+.web9 {
+    padding-left: 31% !important;
+    padding-right: 31% !important;
+}
+#duro {
+    width: 30%;
+    float: left;
+}
+#suave {
+    width: 70% !important;
+    float: left;
+}
+#suave p {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+#osea p {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 0;
+}
+#osea h1 {
+    color: #013cab;
+    font-size: 2em;
+    line-height: 0.5;
+}
+#enfrente p {
+     font-size: 1.6em;
+    font-style: italic;
+}
+#osea h2 {
+    font-size: 1.4em;
+    line-height: .7;
+    font-style: italic;
+}
+#osea img {
+    width: 70%;
+}
+.vc_custom_1615329063639 {
+    margin-bottom: 120px !important;
+}
+#nope h5 {
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+}
+#abajo{
+    padding-bottom: 5% !important
+}
+#vacancia p {
+    color: #fff;
+     font-size: 1.6em;
+    font-style: italic;
+}
+#vacancia h3 {
+    color: #fff;
+    font-size: 4em;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1.2;
+}
+div#vacancia {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+iframe#amuna {
+    width: 100% !important;
+    height: 500px;
+}
+iframe#amuna {
+    width: 100% !important;
+    height: 850px !important;
+    margin: 0 auto !important;
+    border: 5px solid #00ffeb !important;
+    padding-top: 1% !important;
+    padding-bottom: 1% !important;
+}
+#verdad h3 {
+    font-size: 3em;
+    font-weight: 800;
+    font-style: italic;
+    color: #013c80;
+}
+#manzana h3 {
+    font-size: 3em;
+    font-weight: 800;
+    font-style: italic;
+    color: #013c80;
+}
+#manzana h2 {
+    font-size: 2.4em;
+    font-weight: 800;
+    background: #ef4e28;
+    background: linear-gradient(to right, #19cec7, #013cab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.7em;
+    border-left: 10px solid transparent;
+    border-image: linear-gradient(to right, #19cec7, #004a82);
+    border-image-slice: 1;
+    line-height: 1.1;
+}
+#herencia {
+    padding-top: 12% !important;
+    padding-bottom: 10% !important;
+}
+.todito p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+.noteee h1 {
+    color: #004a82;
+    font-size: 1.7em;
+    line-height: 1;
+    font-style: inherit !important;
+}
+.noteee p {
+    font-size: 1em;
+    margin-top: 0px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0px !important;
+}
+.vc_grid-filter.vc_grid-filter-center {
+    text-align: left !important;
+}
+.vc_grid-filter.vc_grid-filter-filled-rounded.vc_grid-filter-color-purple>.vc_grid-filter-item, .vc_grid-filter.vc_grid-filter-filled.vc_grid-filter-color-purple>.vc_grid-filter-item {
+    background-color: #004a82 !important;
+}
+.noteee h6 {
+    font-size: 1em;
+    background: #004a82;
+    width: fit-content;
+    padding-left: 10px;
+    border-radius: 40px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+.vc-gitem-zone-height-mode-auto:before {
+    padding-top: 27% !important;
+}
+
+.tubo {
+    border: 2px solid #004a82;
+    padding-left: 0%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 0%;
+    border-left: 25px solid #004a82;
+    height: 370px;
+    min-height: 370px;
+    max-height: 400px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 20px;
+}
+.sombra img {
+    box-shadow: 4px 5px 7px 0px #00000073;
+}
+#libro h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #004a82;
+}
+#libro h5 {
+    color: #45a3e8;
+    font-size: 1.4em;
+    font-style: italic;
+}
+div#libro {
+    border: 4px solid #004a82;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: url(/wp-content/uploads/2020/11/cuadrado-azul.png);
+    background-position: left !important;
+    background-size: 27% 100% !important;
+    background-repeat: no-repeat;
+}
+#libro {
+    background-color: #fff !important;
+}
+.cierre p {
+    font-size: .7em;
+}
+div#titp {
+    width: 80%;
+    margin: 0 auto;
+}
+.cabezap h3 {
+    color: #00ffeb;
+    font-size: 3em;
+    font-weight: 800;
+    font-style: italic;
+}
+.cabezap h1 {
+    text-transform: uppercase;
+}
+#proye2 h3 {
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+    color: #013c80;
+    margin-bottom: -50px;
+}
+#proye3 h3 {
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+    color: #013c80;
+}
+.pfon {
+    padding-top: 8%;
+    padding-bottom: 7%;
+}
+.dattt h1 {
+    color: #45a3e8;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: -10px !IMPORTANT;
+}
+.field_5fab50d5d4a24 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+.distinto img {
+    width: 50%;
+    margin-bottom: -25px;
+}
+.distinto p {
+    font-size: 1.2em;
+}
+.lapa {
+    width: fit-content;
+    float: left;
+    padding-left: 39px !important;
+}
+.monte {
+    margin-top: 20px;
+}
+.monte h3 {
+    color: #004a82;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: -5px;
+    font-size: 2em;
+}
+.monte h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.aja h3 {
+    margin-bottom: 40px !important;
+}
+#gol p {
+    padding-top: 4%;
+    padding-bottom: 7%;
+    font-style: italic;
+}
+#baja {
+    margin-top: 186px;
+}
+#arr {
+    margin-top: -6% !important;
+}
+#plas h2 {
+    font-size: 3.6em;
+    font-weight: 900;
+    background: #ef4e28;
+    background: linear-gradient(2.4turn, #49ced9 41%, #fad141 54%, #fc4c86 63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    line-height: 1.1;
+}
+#carg {
+    margin-top: -2% !important;
+}
+#text {
+    padding-top: 11%;
+    padding-bottom: 1%;
+}
+#llevame {
+    max-width: 1280px;
+    width: 100%;
+    margin-top: 10%;
+}
+#nonada {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.serio a {
+    color: #d36667;
+    font-family: 'Spartan-semibold';
+}
+
+#blanco p, #blanco h2,  #blanco h2 strong {
+    color: #fff !important;
+}
+#nonada img {
+    padding: 0px !important;
+    background-image:  none !important;
+    background-size: none !Important;
+}
+#sube {
+    padding-top: 180px !important;
+padding-bottom: 10px !important;
+}
+
+#todo {
+    margin-bottom: -6%;
+    z-index: 1000;
+}
+#nonada a:hover {
+    border: solid 5px #ffffffb8 !important;
+}
+.serio2 {
+    z-index: 1000;
+    position: relative !important;
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/24_VMM_Lobby.jpg);
+    background-size: 100%;
+    padding-bottom: 70px;
+    overflow: inherit !important;
+    background-position-y: 50%;
+}
+
+#carga {
+    border: 3px solid transparent;
+    border-image: linear-gradient(315deg, #d36667 0%, #d36667 4%, transparent 2%, transparent 98%, #d36667 98%, #d36667 100%);
+    -webkit-border-image: -webkit-linear-gradient(315deg, #d36667 0%, #d36667 2%, transparent 2%, transparent 98%, #d36667 98%, #d36667 100%);
+    border-image-slice: 1;
+    padding: 40px !important;
+    max-width: 85% !important;
+    MARGIN: 0 AUTO;
+    margin-top: -200px !important;
+}
+
+.chiki {
+    padding: 30px;
+    color: #fff !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.chiki p {
+    color: #fff;
+}
+.chiki h2 {
+    margin-top: 0;
+}
+#cheko {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #6f8ea5 !important;
+    padding-top: 19%;
+}
+#cheko p:first-child {
+    border-top: 1px solid #6f8ea5;
+    padding-top: 20px;
+    margin-top: -1px !important;
+}
+
+#cheko p {
+    color: #6f8ea5;
+    font-size: .8em;
+    border-bottom: 1px solid #6f8ea5;
+    padding-bottom: 20px;
+}
+
+.maximo {
+    max-width: 700px;
+}
+#carga textarea {
+    height: 70px;
+margin-top: 30px;
+}
+.exo div {
+    background-color: #fff !important;
+}
+.exo ul {
+width: 24% !important;
+    margin-left: 76% !important;
+    margin-bottom: 20px !important;
+}
+.exo li {
+    font-family: 'Heavitas-semibold';
+}
+.exo a {
+    color: #c9d3dd;
+        border-bottom: 2px solid #fff !important;
+}
+.wpb_tabs_nav li.ui-tabs-active a {
+    color: #264a64 !important;
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active {
+    border-bottom: 2px solid #d36667 !important;
+    color: #264a64 !important;
+    background-color: #fff !important;
+}
+
+.exo2 div {
+    max-width: 350px;
+    margin: 0 auto !important;
+    background-position-x: 100% !important;
+    height: 286px;
+    background-position-y: top !important;
+    background-size: 57% !important;
+}
+.exo2 h5 {
+    font-family: 'Spartan-light';
+    color: #264a64;
+    line-height: 1.4em;
+    font-size: 1.7em;
+    max-width: 300px;
+    padding-top: 35px;
+}
+#toma {
+background: #e9edf1; 
+    padding: 60px !important;
+}
+#toma textarea, #toma input {
+    background-color: #e9edf1;
+}
+
+#carga p {
+    width: 90%;
+    margin-left: 10% !important;
+    margin-bottom: 1px;
+}
+.vc_sep_width_10 {
+    width: 35px !important;
+    margin-bottom: 25px;
+}
+input, textarea {
+    background-color: none;
+    border-bottom: 1px solid #93a7ba;
+    border-top: 0px;
+background-color: #fff;
+margin-bottom: 8px;
+}
+
+#carga h6{
+    width: 50% !important;
+    float: left;
+    padding: 1%;
+text-align: right;
+    color: #93a7ba;
+    font-size: 13px;
+font-family: 'Spartan-regular';
+    letter-spacing: 1px;
+    margin-top: 20px;
+margin-bottom: 40px;
+}
+#carga h5 {
+    width: 50% !important;
+    float: left;
+    padding: 1%;
+text-align: right;
+    color: #93a7ba;
+    font-size: 13px;
+font-family: 'Spartan-regular';
+    letter-spacing: 1px;
+    padding-top: 26px;
+}
+#carga2 h5 {
+    width: 50% !important;
+    float: left;
+    padding: 1%;
+    text-align: right;
+    color: #93a7ba;
+    font-size: 13px;
+    font-family: 'Spartan-regular';
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+#carga2 h6{
+    width: 50% !important;
+    float: left;
+    padding: 1%;
+text-align: right;
+    color: #93a7ba;
+    font-size: 13px;
+font-family: 'Spartan-regular';
+    letter-spacing: 1px;
+    margin-top: 20px;
+margin-bottom: 40px;
+}
+#carga2 textarea {
+    height: 30px !important;
+}
+input:hover, textarea:hover {
+    background-color: #fff;
+}
+div#mostro {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: -102px !important;
+    height: 10px;
+    margin-top: 0;
+    max-width: 95px;
+}
+#mostro img {
+    background-image: none !important;
+    width: 100%;
+}
+#mostro a {
+    text-align: center;
+    width: 100% !important;
+}
+#mostro2 {
+    width: 15px;
+    max-width: 95px;
+    margin: 0 auto;
+    padding-top: 0px;
+    margin-bottom: -30px;
+    padding-bottom: 20px;
+margin-top: 40px;
+}
+.acheee {
+max-width: 1880px; 
+}
+.espaciate {
+    margin-top: 5%;
+max-width: 1880px; 
+}
+.espaciate h2 {
+    margin-top: 0px !important;
+}
+.urgencia {
+    width: 27%;
+    background-image: url(http://estudiovmm.com/wp-content/uploads/2021/01/fondo-urgencia.png);
+    background-size: 100% 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+    margin-bottom: -75px;
+    margin-top: -36px;
+    min-width: 240px;
+}
+.urgencia h3 {
+    color: #fff !important;
+    font-family: 'Spartan-light';
+    font-size: 10px;
+}
+.urgencia h4 {
+    color: #fff !important;
+font-family: Spartan-bold;
+font-size: 30px;
+margin-bottom: 0px;
+}
+.urgencia h4 a {
+    color: #fff !important;
+    font-size: .8em !important;
+
+}
+.margen {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+.usap {
+    background-size: cover !important;
+    background-position: center 57% !important;
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/12_VMM_Vanessa-Valverde-3_panoramica.jpg) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.datos {
+    width: 5%;
+    float: left;
+height: 130px;
+    background-color: #675261;
+}
+.datos:hover {
+    width: 20%;
+animation-name: duro;
+}
+.datos:hover img {
+    width: 100%;
+    padding-left: 40% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding-right: 40% !important;
+    padding-top: 26%;
+    padding-bottom: 20%;
+}
+.nombre {
+    width: 80%;
+    float: left;
+    padding: 22px;
+    background-color: #d36667;
+    padding-bottom: 34px;
+    height: 130px;
+}
+
+#ichi h2, #ichi p, #ichi strong {
+    color: #fff;
+}
+
+#ichi h2 {
+    border-left: 3px solid #dcb595;
+    padding-left: 20px;
+}
+
+#ichi1 {
+    max-width: 620px !important;
+    width: 100%;
+}
+
+.ichi2 h3 {
+color: #264a64;
+padding-top: 40px;
+}
+.ichi2 p {
+color: #264a64;
+    text-align: left !important;
+}
+.separador {
+    height: 3px;
+    background-color: #264a64;
+    width: 38px;
+    margin-bottom: 20px;
+}
+.maqui > .vc_custom_1640299529602 > .wpb_wrapper {
+    column-count: 3;
+ padding: 15px;
+}
+.ichi2 {
+    background-color: #e4e9ee;
+    display: block;
+    margin-bottom: 30px !important;
+    margin-left: 0px;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 30%;
+    float: left;
+    height: 310px;
+}
+.ichi2:hover {
+    background-color: #264a64;
+    color: #fff !important;
+}
+.ichi2:hover, .ichi2:hover p, .ichi2:hover h3 {
+    color: #fff;
+}
+ .ichi2:hover h3 {
+font-family: 'Heavitas-bold';
+}
+
+.ichi2:hover .separador {
+    background-color: #d36667 !important;
+}
+
+.nombre h2 {
+    font-size: 25px;
+margin-top: 0px;
+}
+.datos img {
+    width: 0px;
+height: 50.6px !important;
+}
+.datos a {
+    text-align: center;
+}
+#sello img {
+position: absolute;
+    width: 200px;
+    left: 75%;
+    top: 69%;
+}
+.rayita {
+    width: 16%;
+    height: 4px;
+    background-color: #264a64 !important;
+    float: left;
+    border-radius: 63px !important;
+}
+.rayita2 {
+    width: 40px;
+    height: 2px;
+    margin-top: 0px !important;
+    margin-bottom: 34px !important;
+    background-color: #fff !important;
+    margin: 0 auto;
+    border-radius: 63px !important;
+}
+.left {
+    text-align: right !important;
+}
+#paco img {
+    width: 50%;
+margin-bottom: 30px;
+}
+.left strong {
+    color: #d36667;
+    font-family: 'Heav-extrabold';
+}
+#paco a {
+    color: #fff;
+    font-family: 'Spartan-light';
+    text-decoration: underline;
+    font-size: 0.72em;
+}
+#paco a:nth-child(3) {
+    margin-left: 20px;
+}
+#paco a:hover {
+    font-family: 'Spartan-bold';
+}
+div#feo {
+    width: 50% !important;
+    float: left;
+}
+#feo img {
+    width: 18%;
+    margin-left: 10px;
+}
+.dere p {
+    text-align: right !important;
+}
+#fox > .vc-hoverbox .vc-hoverbox-back {  background-image: url(http://estudiovmm.com/wp-content/uploads/2021/03/litigio-bc-1.jpg) !important;
+}
+#fox2 > .vc-hoverbox .vc-hoverbox-back {  background-image: url(http://estudiovmm.com/wp-content/uploads/2021/03/lit2-.jpg) !important;
+}
+#fox3 > .vc-hoverbox .vc-hoverbox-back {  background-image: url(http://estudiovmm.com/wp-content/uploads/2021/03/lit3.jpg) !important;
+}
+
+#fox > .vc-hoverbox, #fox2 > .vc-hoverbox, #fox3 > .vc-hoverbox {
+    height: 360px !important;
+}
+#fox strong, #fox2 strong, #fox3 strong  {
+    text-transform: uppercase !important;
+font-family: 'Heavitas-semibold';
+}
+
+#fox p, #fox2 p, #fox3 p {
+    color: #fff !important;
+margin-top: 10px;
+margin-bottom: 10px;
+width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center !important;
+}
+#daus {
+    width: 40%;
+    margin: 0 auto;
+}
+#daus div {
+    width: 50%;
+    float: left;
+}
+#daus  img{ 
+    padding: 19px !important; 
+}
+#daus a:hover {
+border: 0px !important;
+}
+#fix1 > .vc-hoverbox .vc-hoverbox-back {  background-image: url(http://estudiovmm.com/wp-content/uploads/2021/03/inicio1.jpg) !important;
+background-position: bottom !important;
+    background-size: auto;
+}
+#fix1 > .vc-hoverbox > .vc-hoverbox-inner > .vc-hoverbox-front {
+    background-position: top !important;
+}
+#fix1 > .vc-hoverbox {
+    height: 320px !important;
+}
+
+#fix2 > .vc-hoverbox .vc-hoverbox-back {  background-image: url(http://estudiovmm.com/wp-content/uploads/2021/03/morales2.jpg) !important;
+background-position: bottom !important;
+    background-size: auto;
+}
+#fix2 > .vc-hoverbox > .vc-hoverbox-inner > .vc-hoverbox-front {
+    background-position: top !important;
+}
+#fix2 > .vc-hoverbox {
+    height: 320px !important;
+}
+
+#fix3 > .vc-hoverbox .vc-hoverbox-back {  background-image: url(http://estudiovmm.com/wp-content/uploads/2021/03/hugo2.jpg) !important;
+background-position: bottom !important;
+    background-size: auto;
+}
+#fix3 > .vc-hoverbox > .vc-hoverbox-inner > .vc-hoverbox-front {
+    background-position: top !important;
+}
+#fix3 > .vc-hoverbox {
+    height: 320px !important;
+}
+.vc_btn3.vc_btn3-size-md {
+    font-size: 12px;
+    font-family: 'Heavitas-light' !important;
+    letter-spacing: 1px;
+}
+
+input[type="submit"] {
+    background: #d36667 !important;
+    text-transform: uppercase;
+    font-family: 'Heavitas-light' !important;
+    letter-spacing: 1px;
+    font-size: 12px;
+float: right;
+}
+
+.vahi {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/vanessa2.jpg
+) !important;
+height: 410px;
+    background-size: cover;
+}
+.todo:hover > .vahi:hover {
+    background-image: url(http://estudiovmm.com/wp-content/uploads/2021/12/valverde1.jpg
+) !important;
+animation-name: duro;
+}
+.todo:hover h2, .todo:hover > .vahi:hover {
+animation-name: duro;
+}
+.todo:hover > .nombre > .rayita {
+    width: 70px !important;
+animation-name: duro;
+ animation-duration: .5s;
+}
+.todo:hover > #mato {
+    width: 20%;
+animation-name: duro;
+ animation-duration: .5s;
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active {
+    background-color: #ffffff00;
+}
+
+#suministro img {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    padding: 10px;
+    margin-top: 9%;
+}
+.ijole a {
+    white-space: break-spaces;
+    font-family: 'Spartan-regular';
+    text-transform: capitalize;
+    color: #264a64;
+    border-left: 5px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.ijole a:hover, .ijole a:active, .ijole a:focus  {
+    border-left: 5px solid #d36667;
+}
+.ijole li {
+    border-top: 1px solid #264a64;
+    width: 300px !important;
+}
+#chepa p, #chepa h2, #chepa strong {
+    color: #264a64 !important;
+}
+.ijole li:last-child {
+    border-bottom: 1px solid #264a64;
+}
+.ijole li:hover {
+    background-color: #fff0 !important;
+}
+.ijole p {
+    color: #264a64;
+}
+span.wpb_next_slide {
+    display: none;
+}
+span.wpb_prev_slide {
+    display: none;
+}
+#mato {
+    width: 5%;
+    background-color: #675261;
+    height: 130px;
+    float: left;
+}
+.strong-view.pager-style-buttons .wpmslider-pager-link:before {
+    background: #fff !important;
+}
+#julio {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/julio1.jpg) !important;
+}
+.todo:hover > a > #julio {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/julio2.jpg
+) !important;
+}
+#hugo {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/marticorena1.jpg) !important;
+}
+.todo:hover > a > #hugo {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/marticorena2.jpg) !important;
+}
+.todo:hover > a > #vanessa {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/vanessa1.jpg) !important;
+}
+#cami {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/ugaz1.jpg) !important;
+}
+.todo:hover > a > #cami {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/ugaz2.jpg) !important;
+}
+#jaqui {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/jackelin1.jpg) !important;
+}
+.todo:hover > a > #jaqui {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/jackelin2.jpg) !important;
+}
+@keyframes
+ duro {
+  from {width: 10%;}
+  to {width: 20%;} 
+}
+ duro2 {
+  from {width: 20%;}
+  to {width: 10%;}
+}
+
+
+/* slider-new */
+.image {
+  width: 100%;
+  height: 100vh;
+}
+.radio {
+  display: none;
+}
+.images {
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.images-inner {
+  width: 500%;
+  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+.image-slide {
+  width: 20%;
+  float: left;
+}
+.image-slide,
+.fake-radio,
+.radio-btn {
+  transition: all 2s ease-out;
+}
+.fake-radio {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    bottom: 70px;
+min-width: 20px;
+    max-width: 100%;
+}
+
+/* Move slides overflowed container */
+#slide1:checked ~ .images .images-inner {
+  margin-left: 0;
+}
+#slide2:checked ~ .images .images-inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ .images .images-inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ .images .images-inner {
+  margin-left: -300%;
+}
+/* Color of bullets */
+#slide1:checked ~ div .fake-radio .radio-btn:nth-child(1),
+#slide2:checked ~ div .fake-radio .radio-btn:nth-child(2),
+#slide3:checked ~ div .fake-radio .radio-btn:nth-child(3),
+#slide4:checked ~ div .fake-radio .radio-btn:nth-child(4) {
+  background-color: #ffffff;
+}
+.radio-btn {
+    width: 24%;
+    height: 4px;
+    border-radius: 0px;
+    display: inline-block !important;
+    margin: 0 1px;
+    cursor: pointer;
+background-color: #ffffff29;
+}
+/* Color of bullets - END */
+
+/* Text of slides */
+#slide1:checked ~ .labels .label:nth-child(1),
+#slide2:checked ~ .labels .label:nth-child(2),
+#slide3:checked ~ .labels .label:nth-child(3),
+#slide4:checked ~ .labels .label:nth-child(4) {
+  opacity: 1;
+}
+
+.label {
+  opacity: 0;
+  position: absolute;
+}
+/* Text of slides - END */
+
+
+
+/* Calculate AUTOPLAY for BULLETS */
+@keyframes bullet {
+  0%, 25%   {
+    background: white;
+  }
+  26%, 100% {
+    background: #ffffff36 !important;
+  }
+}
+
+#play1:checked ~ div .fake-radio .radio-btn:nth-child(1) {
+  animation: bullet 16400ms infinite -1000ms;
+}
+
+#play1:checked ~ div .fake-radio .radio-btn:nth-child(2) {
+  animation: bullet 16400ms infinite 3100ms;    
+}
+
+#play1:checked ~ div .fake-radio .radio-btn:nth-child(3) {
+  animation: bullet 16400ms infinite 7200ms;    
+}
+#play1:checked ~ div .fake-radio .radio-btn:nth-child(4) {
+  animation: bullet 16400ms infinite 11300ms;   
+}
+/* Calculate AUTOPLAY for BULLETS - END */
+
+
+
+
+/* Calculate AUTOPLAY for SLIDES */
+@keyframes slide {
+  0%, 25%   { margin-left: 0; }
+  26%, 50%  { margin-left: -100%; }
+  51%, 75%  { margin-left: -200%; }
+ 76%, 100%  { margin-left: -300%; }
+
+}
+
+
+.st-slider > #play1:checked ~ .images .images-inner {
+  animation: slide 16400ms infinite;    
+}
+/* Calculate AUTOPLAY for SLIDES - END */
+
+
+
+/* Calculate AUTOPLAY for CAPTION */
+@keyframes caption {
+  0%, 25%   {
+    opacity: 1;
+  }
+ 25%, 100% {
+    opacity: 0;
+  }
+}
+
+
+#play1:checked ~ .labels .label:nth-child(1) {
+  animation: caption 16400ms infinite -1000ms;
+}
+
+#play1:checked ~ .labels .label:nth-child(2) {
+  animation: caption 16400ms infinite 3100ms;   
+}
+
+#play1:checked ~ .labels .label:nth-child(3) {
+  animation: caption 16400ms infinite 7200ms;   
+}
+#play1:checked ~ .labels .label:nth-child(4) {
+  animation: caption 16400ms infinite 11300ms;  
+}
+/* Calculate AUTOPLAY for CAPTION - END */
+
+#homepage-slider {
+    height: 100vh;
+    width: 100%;
+}
+.cs_anchor {
+    display: none;
+}
+.mete1 {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/1-16_VMM_Equipo-de-Abogados.jpg);
+
+}
+.mete2 {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/2-14_VMM_Equipo-de-Abogados.jpg);
+
+}
+.mete3 {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/24_VMM_Equipo-de-Abogados.jpeg);
+background-position: center !important;
+}
+.mete4 {
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/4-18_VMM_Equipo-de-Abogados.jpg);
+
+}
+.mete1, .mete2, .mete3, .mete4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+background-position: top;
+}
+.eslaider {
+    width: 75%;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 15%;
+    max-width: 700px;
+    padding-top: 17%;
+}
+.eslaider2 {
+    width: 50%;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 15%;
+    max-width: 700px;
+}
+.eslaider h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Heavitas-semibold';
+    font-size: 2.8em;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+margin-bottom: 30px;
+}
+.eslaider h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Heavitas-semibold';
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin-bottom: 16px;
+    padding-top: 10%;
+font-weight: 500;
+}
+.eslaider a {
+    width: 140px !important;
+    border: solid #ffffff54 3px;
+    padding: 15px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Heavitas-light';
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+.eslaider a:hover {
+    border: solid #fff 3px;
+}
+.sua h2, .sua strong, .sua p, .sua h4, .sua h5, .sua h6 {
+    color: #fff;
+}
+.sua h2 {
+    max-width: 482px;
+margin-bottom: -20px;
+}
+.sua input, .sua textarea {
+    border-bottom: 1px solid #ffffff45;
+    /* background: linear-gradient( 
+360deg,#ffffff7a 29%,#ffffff00 10%) border-box; */
+    /* -webkit-mask: /*4; */
+    linear-gradient(#fff 0 0): ;
+    padding-box, linear-gradient(#fff 0 0): ;
+    */: ;
+    /* -webkit-mask-composite: destination-out; */
+    background-color: #fff0 !important;
+}
+.sua textarea {
+    letter-spacing: 0px;
+height: 100px;
+}
+.sua h5, .sua h6 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    text-align: right;
+    font-size: .85em;
+    font-weight: 500;
+    color: #fffffff2;
+    font-family: 'Spartan-regular';
+}
+.sua input:hover, .sua input:active, .sua input:focus {
+    font-size: 2em !important;
+}
+.sua input[type="submit"]:hover, #toma input[type="submit"]:hover, #carga2 input[type="submit"]:hover,  .sua input[type="submit"]:focus, #toma input[type="submit"]:focus, #carga2 input[type="submit"]:focus, .sua input[type="submit"]:active, #toma input[type="submit"]:active, #carga2 input[type="submit"]:active {
+    font-size: 12px !important;
+    height: 39px !important;
+    line-height: 12px !important;
+}
+.sua h6 {
+    width: 50%;
+    float: left;
+}
+.sua input[type="submit"] {
+    background-color: #264a64 !important;
+    color: #fff;
+    border-bottom: 0px;
+    margin-top: 20px;
+    -webkit-mask-composite: copy;
+}
+.secado {
+    max-width: 220px;
+    background-color: #675261;
+    padding-top: 33px !important;
+    padding-left: 30px;
+    color: #fff !important;
+    font-family: 'Spartan-regular';
+    position: absolute;
+    bottom: -380px;
+    padding-right: 15px;
+    padding-bottom: 31px;
+}
+.secado h4 {
+    font-size: 1.4em;
+line-height: 1.2em;
+}
+.secado strong {
+    color: #e3b192;
+}
+.secado h5 {
+    text-align: left;
+    font-size: 1.7em;
+    font-family: 'Spartan-semibold';
+    margin-top: -5px;
+    margin-bottom: 1px;
+color: #fff !important;
+}
+.redes {
+    width: 100% !important;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1280px !important;
+     top: 17%;
+}
+.redes div {
+    width: 33.33333%;
+    float: left;
+}
+.redes a img {
+    width: 8%;
+    text-align: left;
+max-width: 30px !important;
+min-width: 30px !important;
+
+}
+div#derrr {
+    text-align: right;
+}
+#derrr a img {
+    padding: 5px;
+}
+#retro p {
+    color: #675261 !important;
+}
+#elequipo2 {
+    background-attachment: fixed;
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/01_VMM_Estudio-Abogados-1.jpg);
+    background-size: 100% !important;
+    height: 45vh;
+background-repeat: no-repeat;
+}
+.navigation a {
+   border-bottom: 2px solid #fff0 !important;
+color: #fff;
+}
+.navigation > li > a:hover {
+   border-bottom: 2px solid #fff !important;
+color: #fff !important;
+}
+.navigation > li > a:active {
+   border-bottom: 2px solid #fff !important;
+color: #fff !important;
+}
+
+
+@media screen and (max-width: 2561px) {
+.mete1 {
+    background-size: 103% !important;
+    background-position: bottom !important;
+}
+#ichi1 {
+    padding-top:5%;
+}
+#ichi {
+    background-position-y: 64%;
+}
+.top {
+  opacity: 1;
+ }
+.fondo {
+  height: 66vh;
+ }
+#chingo {
+     margin-bottom: 19%;
+}
+#toma textarea:hover, #toma textarea:focus, #toma textarea:active,  #toma input:hover, #toma input:focus, #toma input:active {
+    font-size: 1.6em;
+}
+#retro p {
+    color: #675261 !important;
+text-align: justify;
+}
+.amarillo {
+    width: 90% !important;
+    margin: 0 auto;
+    max-width: inherit;
+}
+.redes {
+    width: 90% !important;
+   max-width: inherit !important;
+    top: 17%;
+}
+.cerra2 {
+    width: 90%;
+   max-width: inherit !important;
+}
+.anchito {
+    width: 90% !important;
+   max-width: inherit !important;
+}
+#feo img {
+    max-width: 100px !important;
+}
+.radio-btn {
+    width: 23.5%;
+}
+.eslaider {
+    display: flex;
+    height: 30vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    /* margin-top: -16% !important; */
+    vertical-align: inherit;
+    /* margin: inherit; */
+    width: auto !important;
+}
+.cacho {
+    display: flex;
+}
+#paco img {
+    max-width: 220px !important;
+}
+#elequipo2 {
+    background-position-y: 93% !important;
+}
+}
+@media screen and (max-width: 1366px) {
+.margen-chico {
+    margin-top: -3em !important;
+}
+div#recove2 {
+    margin-top:-14% !important;
+}
+
+.pie2 p {
+    width: 103% !important;
+}
+#elequipo2 {
+    background-position-y: top !important;
+background-size: 120% !important;
+}
+}
+@media screen and (max-width: 1280px) {
+.mete1, .mete2, .mete3, .mete4 {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.mm-listview > li {
+    padding-bottom: 10px;
+    border-bottom: 0px solid #0000;
+    font-size: 1.5em;
+    padding-top: 6% !important;
+}
+.container {
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.image {
+    width: 100%;
+}
+.mm-listview .mm-next {
+    background: rgb(255 255 255 / 0%);
+}
+.mm-menu .mm-listview > li .mm-next:after {
+   border-color: #d36667;
+    width: 10px;
+    padding: 9px;
+    margin-top: 34px;
+}
+
+
+.mm-menu .mm-listview > li .mm-prev:after, .mm-menu .mm-listview > li .mm-next:before {
+    border-color: rgb(255 255 255 / 0%);
+}
+li .mm-next:after {
+    border-color: #264a64;
+}
+.mm-menu {
+    margin: 0;
+    position: relative;
+    left: 48%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+#memow {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.mm-listview a {
+    text-decoration: none;
+    font-family: 'Heavitas-light';
+    font-size: 1.3em;
+    text-align: center;
+color: #fff !important;
+}
+.mm-menu.mm-top, .mm-menu.mm-bottom {
+    width: 100% !important;
+    min-width: 40%;
+    max-width: 100%;
+    background-color:#264a64;
+    margin-left: 0 !important;
+    left: 0 !important;
+    min-height: 100vh;
+}
+ul.sub-menu a {
+    width: 100% !important;
+    text-align: left !important;
+}
+.mas2 {
+    width: 25%;
+    float: left;
+}
+nav.nav {
+    width: 15% !important;
+    float: right !important;
+}
+.nav ul {
+    display: none;
+}
+.mobile-nav-trigger {
+    display: inherit;
+}
+.menu-lifecare {
+    width: 15% !important;
+    float: right;
+}
+a.mobile-nav-trigger {
+    color: #fff !important;
+    border: 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 36px !important;
+}
+#llevame {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 5% !important;
+    margin-bottom: -1% !important;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.todito p {
+    font-size: 1em;
+}
+  .movilno {
+    display: none !important;
+}
+.radio-btn {
+    width: 22.6% !important;
+}
+.movilsi {
+    display: block;
+}
+
+.amarillo {
+    width: 90%;
+}
+.cerra2 {
+    width: 90%;
+}
+.eslaider {
+    width: 100%;
+}
+.redes {
+    top: 19%;
+width: 90% !important;
+}
+.serio {
+    margin-top: -29px !important;
+    width: 100%;
+    margin: 0 auto !important;
+    margin-bottom: 50px !important;
+}
+#mueve {
+    padding-left: 15%;
+}
+#sube {
+    padding-top: 180px !important;
+    padding-bottom: 3% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    margin-top: -6% !important;
+    display: inline-block;
+    z-index: -100000;
+}
+#sube p::firts-child {
+    padding-top: 20px !important;
+}
+#suministro img {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 49%;
+    padding: 9px;
+    margin-top: 9%;
+}
+.couto {
+    padding-left: 0px !important;
+}
+#fox > .vc-hoverbox, #fox2 > .vc-hoverbox, #fox3 > .vc-hoverbox {
+    height: 300px !important;
+}
+.vc-hoverbox-wrapper.vc-hoverbox-width--90 .vc-hoverbox {
+    width: 100%;
+}
+.serio2 {
+    margin-top: -29%;
+}
+.margen {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+.cierre {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+#paco a {
+    font-size: 0.6em;
+}
+.pie2 a {
+    FONT-SIZE: 1em;
+}
+#retro {
+    padding-bottom: 550px;
+}
+.todito {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.todito p {
+    font-size: .7em;
+}
+.mas2 img {
+    width: 150px;
+}
+.nombre h2 {
+    font-size: 23px;
+}
+#tuxteno {
+    padding-right: 20px;
+}
+.pie2 {
+    width: 17%;
+}
+.pie2:last-child {
+    width: 20%;
+}
+#ichi1 {
+    max-width: 100%;
+    width: 50%;
+}
+.ichi2 {
+    margin-right: 3% !important;
+    width: 30.3% !important;
+}
+.abobor div {
+    margin: -1px;
+}
+#checha {
+    padding-top: 70px !important;
+    padding-bottom: 40px !important;
+}
+#elequipo2 {
+    padding-bottom: 70px !important;
+}
+.mm-menu .mm-listview > li:after {
+    border-color: rgba(0, 0, 0, 0);
+}
+}
+@media screen and (max-width: 1180px) {
+.exo ul {
+    width: 28% !important;
+    margin-left: 72% !important;
+}
+
+.menu-lifecare li {
+    display: none;
+}
+.usap {
+    background-size: 120% !important;
+}
+
+#nonada {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -11%;
+}
+#maybe {
+    max-width: 430px !important;
+    margin-right: 34px !important;
+}
+#sube {
+    margin-top: -7% !important;
+}
+#mostro2 {
+    padding-top: 0px;
+    margin-bottom: -30px;
+    padding-bottom: 40px;
+    margin-top: 19%;
+}
+.espaciate {
+    margin-top: 1%;
+}
+#mueve {
+    padding-left: 8%;
+}
+.vc-hoverbox-block {
+    height: 300px !important;
+    width: 300px !important;
+}
+}
+@media screen and (max-width: 1024px) {
+.mm-listview .mm-next {
+    margin-top: 29px;
+}
+.mm-listview > li > a {
+    text-align: left !Important;
+}
+#elequipo2 {
+    background-position-y: top !important;
+    background-size: 180% !important;
+}
+#sube {
+    padding-top: 80px !important;
+    z-index: 100;
+}
+.vc-hoverbox-block {
+    height: 250px !important;
+    width: 250px !important;
+}
+.vahi {
+    height: 295px;
+}
+#daus img {
+    padding: 10px !important;
+}
+#mato {
+    width: 20%;
+    background-color: #675261;
+    height: 130px;
+    float: left;
+}
+.rayita {
+    margin-top: -10px;
+}
+.nombre {
+    height: 110px;
+}
+#mato {
+    height: 110px;
+}
+.nombre h2 {
+    font-size: 21px;
+}
+#ichi {
+    height: 580px;
+}
+.exo ul {
+    width: 32% !important;
+ }
+}
+@media screen and (max-width:820px) 
+{
+.mm-listview .mm-next {
+    margin-top: 20px;
+}
+#poli {
+    padding-top: 15% !important;
+    padding-bottom: 5%;
+    max-width:100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+#timador i {
+    margin-left: -2px !important;
+}
+.exo ul {
+    width: 50% !important;
+    margin-left: 56% !important;
+}
+ul.mobile.mm-listview.mm-first.mm-last {
+    color: #fff0 !important;
+}
+nav div {
+    display: none !important;
+}
+div#encoje {
+    margin-top: -13%;
+    margin-bottom: 2% !important;
+}
+#vanessa{
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/valverde.jpg) !important
+}
+#hugo{
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/marticorena.jpg) !important
+}
+#julio{
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/julio.jpg) !important
+}
+#jaqui{
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/lopez.jpg) !important
+}
+#cami{
+    background-image: url(https://estudiovmm.com/wp-content/uploads/2022/10/ugaz.jpg) !important
+}
+.todo:hover h2, .todo:hover > .vahi:hover {
+    font-size: 20px !important;
+    animation-name: ;
+}
+.todo:hover > #mato {
+    width: 20%;
+    animation-name: none;
+    animation-duration: 0s;
+}
+#tupidiin {
+    border-bottom: 1px solid #264a6475;
+}
+.vc_toggle_size_lg.vc_toggle_arrow .vc_toggle_icon {
+    margin-left: 0px;
+    margin-right: 20px;
+width: 15px;
+padding: 0px;
+}
+.vc_toggle.vc_toggle_active>.vc_toggle_content {
+    width: 95%;
+    padding-left: 5%;
+}
+.vc_toggle {
+    border-top: 1px solid #264a6475;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.vc_toggle.vc_toggle_arrow .vc_toggle_icon::after, .vc_toggle.vc_toggle_arrow .vc_toggle_icon::before {
+    border-color: #d36667 !important;
+    margin-top: -3px !important;
+}
+.vc_toggle_title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+.vc_toggle_title>h4 {
+    font-family: 'Spartan-regular';
+    color: #264a64;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+div#seve {
+    width: 100%;
+}
+.fake-radio {
+    display: none;
+}
+.chepito p {
+ padding-top: 0% !important;
+    margin-left: 10% !important;
+    font-size: 1.1em !important;
+}
+#memow {
+    padding-bottom: 40px !important;
+    margin-top: -50px !important;
+    width: 80%;
+    margin: 0 auto !important;
+}
+#maybe {
+    margin-top: 3% !important;
+}
+.vc_row {
+    margin-right: 0px !important;
+}
+.slidein {
+padding-top: 0 !important; 
+}
+h2 {
+    margin-top: 10px;
+}
+.abobor {
+    width: 80% !important;
+    margin-left: 10% !important;
+
+}
+#chingo {
+   margin-bottom: 60% !important;
+}
+#llevame h2 {
+    padding-top: 80px;
+}
+.chifu2 {
+    width: 100%;
+}
+.cerra {
+    width: 95% !important;
+}
+.vaca h2 {
+    text-align: left !important;
+}
+.eslaider {
+    width: 100%;
+    padding-top: 0%;
+    zoom: 1.5;
+}
+div#acero {
+    margin-bottom: 0px !important;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: inherit;
+    margin: inherit;
+    padding: inherit;
+    min-width: inherit;
+}
+.vc-hoverbox-block {
+    height: 285px !important;
+    width: 285px !important;
+}
+#sube {
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+    margin-top: -6% !important;
+    display: inline-block;
+    z-index: 99999;
+padding-bottom: 15% !important;
+    padding-top: 80px !important;
+}
+#daus img {
+    padding: 15px !important;
+}
+#nonada {
+    max-width: inherit !important;
+     width: 120% !important;
+}
+.eslaider h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.eslaider h4 {
+    margin-bottom: 10px !important ;
+}
+.eslaider a {
+    padding: 10px 5px;
+border: solid #ffffff54 1px;
+}
+.rayita2 {
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+}
+.mas2 {
+    float: left;
+}
+.rayita {
+    margin-top: -10px;
+}
+.fake-radio {
+    margin-top: 1% !important;
+}
+.nombre h2 {
+    font-size: 20px;
+}
+.radio-btn {
+    width: 22.5% !important;
+}
+.mete1, .mete2, .mete3, .mete4 {
+    background-position: top;
+background-size: 240% !important;
+}
+.pie2:last-child {
+    display: none;
+}
+.pie3 {
+    width: 31%;
+}
+.pie2 {
+    width: 23%;
+}
+#paco img {
+    width: 82%;
+    margin-bottom: 60px;
+}
+#suministro img {
+    margin-left: 23%;
+    margin-right: 30%;
+    width: 57%;
+    padding: 9px;
+    margin-top: 5%;
+}
+.maquillada > .vc_col-sm-4 {
+    width: 50%;
+}
+#tabletno {
+  display: none
+}
+.tabletno {
+  display: none
+}
+.tabletsi {
+    display: block !important;
+}
+.chepito {
+    margin-top: -50%;
+}
+.chepito p {
+    margin-right: 5px;
+}
+#contiac {
+    position: absolute !important;
+    top: inherit;
+left: 11% !important;
+}
+#maybe {
+   max-width: 375px !important;
+    float: right;
+    margin-top: 20px;
+    margin-right: 32px;
+}
+.aboboroj {
+    padding: 20px !important;
+    margin-left: -30px;
+}
+#memow {
+    padding-top: 0px !important;
+    padding-bottom: 40px !important;
+    margin-top: -50px !important;
+}
+.vahi {
+    height: 305px;
+}
+.sua {
+    width: 100% !important;
+    padding-top: 50%;
+    padding-bottom: 1%;
+}
+.secado {
+    max-width: 320px;
+    bottom: -190px;
+    padding-bottom: 30px;
+    right: -128%;
+}
+.cierre {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.secado h5, .secado a {
+    color: #fff;
+}
+#paco a {
+    font-size: 0.6em;
+    display: block;
+    margin-left: 0px !important;
+    padding-top: 18px;
+}
+#carga {
+    padding: 50px !important;
+    max-width: 100% !important;
+}
+.serio2 {
+    margin-top: -36%;
+}
+.ijole {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.ijole li {
+    width: 95% !important;
+}
+.wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav a {
+    padding: 5px 5px 5px 15px;
+}
+#mato {
+    width: 20%;
+}
+.todo {
+    padding-top: 40px;
+}
+#fox > .vc-hoverbox, #fox2 > .vc-hoverbox, #fox3 > .vc-hoverbox {
+    height: 190px !important;
+}
+.vc_custom_1615329063639 {
+    margin-bottom: -40px !important;
+}
+#nonada {
+    max-height: 220px;
+}
+#elequipo2 {
+    display: none;
+}
+#mostro2 {
+    width: 25px;
+    max-width: 95px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: -18px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    display: none;
+}
+#serial {
+    padding-top: 30px !important;
+}
+.margen {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+#chepa {
+    width: 85% !important;
+    margin: 0 auto;
+}
+div#urv, div.urv {
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    margin-top: -65px !important;
+margin-bottom: 80px;
+}
+.slidein  {
+animation-name: none !important; 
+padding-top: 75px !important;
+animation-duration: 0 !important;
+display: block;
+}
+#aiowa {
+    margin-bottom: -150px;
+}
+#aiowa img {
+    padding: 20px;
+max-height: 92%;
+}
+#mueve {
+    margin-left: 10% !important;
+    width: 100% !important;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+#feo div {
+    width: 60% !important;
+}
+#feo div:last-child {
+    width: 40% !important;
+}
+.urv {
+    margin-left: 0px !important;
+width: 100% !important;
+}
+.serio img {
+    padding: 5px;
+    background-image: none;
+    background-size: none;
+    margin-bottom: 20px;
+}
+#sube h2 {
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+}
+#mostro img {
+    background-image: none !important;
+    width: 50%;
+}
+div#mostro {
+    width: 11%;
+    margin-bottom: -91px !important;
+    margin-top: 2%;
+}
+.usap {
+    background-size: 279% !important;
+    background-position-x: 27%!important;
+    background-position-y: bottom !important;
+}
+.todito p {
+    font-size: .7em;
+    margin-bottom: -51px !important;
+}
+#paco a:nth-child(3) {
+    margin-left: 10px;
+}
+.margen-chico {
+    width: 100% !important;
+}
+.fondo {
+    height: 100vh !important;
+    width: 100% !important;
+    max-height: 70vh !important;
+}
+#ichi1 {
+    width: 100%;
+}
+.ichi2 {
+    width: 46% !important;
+height: 455px; 
+z-index: 1000;
+}
+.ichi2 h3 {
+overflow-wrap: inherit;
+}
+.cierre p {
+    font-size: .56em;
+}
+.vc_btn3-container.vc_btn3-right {
+    text-align: center !important;
+}
+.maquillada > .wpb_column {
+    width: 50% !important;
+    margin-bottom: 0px;
+}
+#tuxteno p {
+    margin-top: -40px !important;
+}
+#chewa {
+    background-size: 240% !important;
+    background-position: top !important;
+    min-width: auto;
+}
+.vc_row.wpb_row.vc_inner.vc_row-fluid.maquillada.vc_custom_1640555370244.vc_row-has-fill {
+    display: none !important;
+}
+#partido > .wpb_column {
+    width: 100% !important;
+}
+#partido img {
+    width: 400px;
+    padding: 50px;
+}
+#retro {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100% !important;
+    margin-top: -25px !important;
+    margin-bottom: -25px !important;
+}
+.pie3 {
+    width: 30%;
+    margin-right: 6px;
+}
+.centrino {
+   height: 65vh;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+#toma h2 {
+    padding-top: 25px;
+}
+.centrino {
+    height: 70vh;
+}
+.pie3 p {
+    text-align: center !important;
+}
+.container {
+    max-width: 480px !important;
+}
+.exo2 {
+    margin-top:0;
+    display: none !important;
+}
+div#acero {
+    height: 70vh;
+}
+.eslaider { 
+zoom: 1;
+}
+.mas2 {
+    width: 50%;
+}
+.mm-menu {
+    left: 5%;
+}
+
+ul.mobile.mm-listview.mm-first.mm-last {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+}
+.mm-menu.mm-top, .mm-menu.mm-bottom {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+nav.nav {
+    width: 0% !important;
+}
+.nav {
+    margin-right: 80% !important;
+    margin-top: -6px !important;
+}
+.eslaider {
+    padding-top: 55% !important;
+    width: 90%;
+    margin-top: 0 !important;
+}
+.eslaider h2 {
+    font-size: 1.4em;
+    width: 100%;
+line-height: 1.3em;
+}
+.vaca ul {
+    padding-top: 1px !important;
+}
+.eslaider a {
+    width: 30%;
+    padding: 10px 8px;
+    font-size: .8em;
+}
+.rayita2 {
+    margin-top: -8px !important;
+    margin-bottom: 10px !important;
+}
+.fake-radio {
+  display: none;
+}
+.radio-btn {
+    width: 20.5% !important;
+}
+div#urv, div.urv {
+    width: 96% !important;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    margin-top: -50px !important;
+margin-bottom: -36px;
+}
+div.urv {
+    margin-bottom: 44px !important;
+    z-index: 100000;
+}
+#sube {
+    margin-top: -55% !important;
+    padding-bottom: 660px !important;
+}
+#mostro2 {
+    display: none;
+}
+.redes a img {
+    width: 16%;
+}
+.cerra {
+    margin-top: 15px;
+}
+#chepa {
+    width: 95% !important;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+div#mysticky-wrap {
+    height: 0px !important;
+}
+.serio img {
+    padding: 0px;
+     width: 100% !important;
+}
+div#urv, div.urv {
+    width: 100%;
+    margin-left: 0;
+}
+.vc_sep_width_10 {
+    width: 20% !important;
+    margin: 0 auto !important;
+padding-top: 20px !important;
+padding-bottom: 20px !important;
+}
+h2 {
+    text-align: center !important;
+    font-size: 1.8em;
+}
+p {
+    text-align: center;
+}
+#mostro img {
+    width: 40% !important;
+    margin: 0 auto;
+    margin-left: 39%;
+}
+#mueve {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+.couto {
+    width: 100% !important;
+    margin-left: 0;
+    margin: 0 auto;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+#tuxteno {
+    padding-right: 0;
+}
+#fox > .vc-hoverbox, #fox2 > .vc-hoverbox, #fox3 > .vc-hoverbox {
+    height: 250px !important;
+    margin-bottom: 30px;
+}
+#carga {
+    padding: 0px !important;
+}
+#toma {
+    padding: 10px !important;
+}
+#toma textarea:hover, #toma input:hover {
+    font-size: 1.6em;
+}
+#carga h6 {
+    width: 100% !important;
+}
+.serio2 {
+    margin-top: -75%;
+}
+#carga p {
+    width: 100%;
+    margin-left: 0 !important;
+    text-align: center !important;
+}
+.urgencia {
+    width: 100%;
+    background-image: url(http://estudiovmm.com/wp-content/uploads/2021/01/fondo-urgencia.png);
+    background-size: 117% 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    margin-bottom: -56px;
+    margin-top: 21px;
+    min-width: 220px;
+    text-align: center;
+}
+.sua {
+    width: 100% !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+input[type="submit"] {
+    width: 100%;
+    margin: 0 auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    float: inherit;
+    margin-top: 24px !important;
+}
+.maquillada > .vc_col-sm-4 {
+    width: 100% !important;
+    margin-bottom: 50px;
+}
+.vc_custom_1615329413940 {
+    margin-top: 0px !important;
+    margin-bottom: 60px !important;
+}
+.sua h2 {
+    max-width: 482px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+.sua h5, .sua h6 {
+    text-align: center;
+}
+.sua h6 {
+    width: 100%;
+    text-align: center;
+}
+.nombre h2 {
+    font-size: 20px;
+    text-align: left !important;
+    padding-top: 0px;
+}
+.vc_btn3.vc_btn3-size-md {
+    width: 100%;
+}
+.cerra2 {
+    width: 70%;
+    margin: 0 auto;
+}
+.pie3 {
+    width: 100%;
+}
+#paco a {
+display: none;
+}
+a#sumare {
+    margin-bottom: 60px;
+}
+#pacopaco3 {
+display: block;
+}
+#pacopaco2 {
+display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1em;
+color: #fff !important ;
+    font-family: 'Spartan-light';
+    text-decoration: underline;
+padding-top: 20px;
+}
+
+#pacopaco2 a {
+color: #fff !important ;
+    display: block;
+    margin-top: 10px;
+}
+.pie2 {
+    width: 100%;
+    text-align: center;
+}
+.pie2 h4:firts-child {
+    margin-top: 0px;
+}
+.pie2 h4 {
+    margin-top: 50px;
+}
+#paco img {
+    width: 70% !important;
+    margin-bottom: 0px !important;
+    margin-top: -50px;
+}
+.todito {
+    padding-bottom: 50px;
+}
+#feo div {
+    width: 100% !important;
+}
+.cierre p {
+    font-size: .5em;
+    text-align: center !important;
+}
+.ijole ul {
+    margin-bottom: 50px !important;
+}
+.ijole li {
+    width: 100% !important;
+    text-align: center;
+}
+div#feo {
+    width: 100% !important;
+}
+#feo img {
+    width: 24%;
+    margin-left: 6px;
+    margin-top: -5px;
+}
+.mm-listview .mm-next {
+    margin-top: 0px !important;
+}
+.site-bar .nav {
+    padding-top: 0px;
+    margin-top: 2px !important;
+    margin-bottom: -5px !important;
+}
+#nonada {
+    width: 100% !important;
+    padding-left: 5% !important;
+}
+.todito p {
+    margin-bottom: 1px !important;
+}
+#anial {
+    margin-top: 0px !IMPORTANT;
+}
+.usap {
+    background-size: 412% !important;
+    background-position-x: 33%!important;
+    background-position-y: bottom !important;
+    background-repeat: no-repeat;
+}
+.margen-chico {
+    width: 95% !important;
+}
+.abobor {
+    padding: 30px !important;
+}
+.chifu2 {
+    padding: 35px;
+}
+#sello img {
+    position: absolute;
+    width: 150px;
+    left: 51%;
+    top: 88%;
+}
+.ichi2 {
+    width: 100% !important;
+}
+.maquillada > .wpb_column {
+    width: 100% !important;
+    margin-bottom: 50px;
+}
+#chewa {
+    background-size: 530% !important;
+}
+.aboboroj {
+    margin-left: 10%;
+    width: 80% !important;
+    margin-right: 0%;
+    padding: 10px !important;
+    padding-bottom: 50px !important;
+    margin-top: 50px !important;
+}
+.chepito p {
+    padding-top: 0%;
+    margin-right: 10%;
+    margin-top: -25%;
+}
+.fondo {
+    max-height: 70vh !important;
+}
+.cerra {
+    max-width: 95%;
+    width: 100% !important;
+}
+.amarillo {
+    width: 95%;
+max-width: 95%;
+}
+#contiac div {
+    float: left;
+padding: 0 !important;
+}
+#contiac {
+    left: 20%;
+}
+.chepito h2 {
+    text-align: left !important;
+}
+.memow p {
+    text-align: left !important;
+}
+.vaca {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
+    z-index: 100000;
+}
+.exo2 {
+    margin-bottom: -90px;
+}
+#contac {
+    margin-top: -70% !important;
+} 
+#carga2 h6 {
+    width: 100% !important;
+ }
+#carga2 h6, #carga2 h5 {
+  text-align: center !important;
+ }
+.ichi2 p {
+    text-align: left !important;
+}
+#aiowa {
+    margin-bottom: -769px;
+    margin-top: 60px;
+}
+#partido img {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: -60px !important;
+}
+div#partido {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.margen {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+}
+#elequipo h2 {
+    margin-top: -5px !important;
+    font-size: 2em;
+}
+#quipazo {
+margin-top: 20px !important; 
+}
+.ichi2 {
+height: auto;
+}
+.margen-chico {
+width: 100% !important;
+}
+#chingo {
+margin-bottom: 15% !important!;
+}
+.fondo {
+    max-height: 75vh !important;
+}
+.vc_toggle_title {
+    display: flex;
+    flex-direction: row-reverse;
+}
+i.vc_toggle_icon {
+    margin-right: 20px;
+}
+.vc_toggle_title>h4 {
+font-family: 'Spartan-regular';
+    color: #264a64;
+font-size: 14px;
+    line-height: 1.4em;
+}
+.vc_toggle.vc_toggle_arrow .vc_toggle_icon::after, .vc_toggle.vc_toggle_arrow .vc_toggle_icon::before {
+    border-color: #d36667 !important;
+    margin-top: -3px !important;
+}
+.vc_toggle {
+    border-top: 1px solid #264a6475;
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+#tupidiin {
+    border-bottom: 1px solid #264a6475;
+}
+#suministro img {
+    margin-left: 23%;
+    margin-right: 30%;
+    width: fit-content !important;
+    padding: 9px;
+    margin-top: 5%;
+    max-height: 31px;
+max-width: 33px !important;
+}
+.centrino h2 {
+    font-size: 1.7em;
+}
+#carga2 h5, #carga h5 {
+    width: 100% !important;
+}
+.exo ul {
+    width: 100% !important;
+}
+.acorrr {
+    margin-bottom: -50px !important;
+    padding-top: 0px !important;
+    margin-top: -130px !important;
+}
+.tabletno {
+    display: block !important;
+}
+.sua h5, .sua h6 {
+    width: 100% !important;
+}
+.pie2:last-child {
+    margin-bottom: 30px !important;
+}
+.tabletsi {
+    display: none !important;
+}
+   .slidein {
+            animation-duration: 5s;
+            animation-name: slidein!important;
+        }
+        
+        @keyframes slidein {
+            from {
+                margin-bottom: 0%;
+            }
+            to {
+                margin-bottom: 19%;
+            }
+        }
+        
+        .slideinOpacit {
+            animation-name: slideinOpacit;
+        }
+        
+        @keyframes slideinOpacit {
+            from {
+                opacity: 1;
+                padding-top: 13%;
+            }
+            to {
+                opacity: 0;
+                padding-top: 0%;
+            }
+        }
+}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<link rel="icon" href="https://estudiovmm.com/wp-content/uploads/2021/01/cropped-favico-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://estudiovmm.com/wp-content/uploads/2021/01/cropped-favico-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://estudiovmm.com/wp-content/uploads/2021/01/cropped-favico-180x180.png" />
+<meta name="msapplication-TileImage" content="https://estudiovmm.com/wp-content/uploads/2021/01/cropped-favico-270x270.png" />
+<style type="text/css" data-type="vc_custom-css">.cerra {
+    opacity: 0.95;
+    background-color: #264a64;
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+.cerra img {
+    box-sizing: border-box;
+    display: block;
+    width: 80px;
+    height: 47px;
+    padding-left: 120px;
+    background: url(http://estudiovmm.com/wp-content/uploads/2021/01/log-hover.png);
+    background-size: contain;
+    background-repeat: no-repeat !important;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+#poli  {
+padding-top: 10%;
+padding-bottom: 5%;
+max-width: 70%;
+margin: 0 auto;
+}
+
+#poli h2 {
+text-transform: uppercase;
+}
+
+#poli strong {
+    font-family: 'Heavitas-bold';
+    text-transform: uppercase;
+}
+
+#poli li {
+ line-height: 2em;
+    color: #264a64;
+    font-size: 12px;
+     font-family: 'Spartan-regular';
+}
+
+.vc_btn3.vc_btn3-size-md {
+    margin-top: 30px;
+    font-size: 12px;
+    font-family: 'Heavitas-light' !important;
+    letter-spacing: 1px;
+    border-radius: 0px !important;
+}
+
+@media screen and (max-width:820px) 
+{
+#poli {
+    padding-top: 15% !important;
+    padding-bottom: 5%;
+    max-width:100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.cerra {
+    width: 100% !important;
+}
+}
+@media screen and (max-width:480px) 
+{
+.cerra {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+h2 {
+    padding-top: 20%;
+}
+}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+</head>
+
+<body class="page-template page-template-template-builder page-template-template-builder-php page page-id-10972 wpb-js-composer js-comp-ver-6.10.0 vc_responsive">
+<script type="rocketlazyloadscript" src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+	<div id="page">
+    <header class="cerra">
+		<div class="amarillo">
+			<div class="col-md-4 mas2">
+									<div id="masthead" class="site-header group">
+
+						<div class="site-logo sustituida">
+							<h1>
+								<a href="https://estudiovmm.com">
+																			<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+										     alt="Valverde, Morales &amp; Marticorena" data-lazy-src="http://estudiovmm.com/wp-content/uploads/2021/01/logo-vmm.png"/><noscript><img src="http://estudiovmm.com/wp-content/uploads/2021/01/logo-vmm.png"
+										     alt="Valverde, Morales &amp; Marticorena"/></noscript>
+																	</a>
+							</h1>
+
+															<p class="tagline">Defensa Penal de la Empresa</p>
+													</div><!-- /site-logo -->
+			</div>
+		</div>
+		<div class="menu-lifecare ">
+						<div class="site-bar group sticky-head">
+							<nav class="nav" role="navigation">
+								<ul id="menu-menu-aqua" class="navigation"><li id="menu-item-9416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-9416"><a href="https://estudiovmm.com/" data-ps2id-api="true">INICIO</a></li>
+<li id="menu-item-9290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9290"><a href="https://estudiovmm.com/nosotros/" data-ps2id-api="true">LA FIRMA</a></li>
+<li id="menu-item-9289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9289"><a href="https://estudiovmm.com/equipo/" data-ps2id-api="true">ESPECIALISTAS</a></li>
+<li id="menu-item-9396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9396"><a href="https://estudiovmm.com/servicios/" data-ps2id-api="true">ÁREA DE PRÁCTICA</a>
+<ul class="sub-menu">
+	<li id="menu-item-10496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10496"><a href="https://estudiovmm.com/litigio/" data-ps2id-api="true">LITIGIO</a></li>
+	<li id="menu-item-10495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10495"><a href="https://estudiovmm.com/compliance-penal/" data-ps2id-api="true">COMPLIANCE PENAL</a></li>
+	<li id="menu-item-10494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10494"><a href="https://estudiovmm.com/asesoria/" data-ps2id-api="true">ASESORÍA</a></li>
+</ul>
+</li>
+<li id="menu-item-9397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9397"><a href="https://estudiovmm.com/contacto/" data-ps2id-api="true">CONTACTO</a></li>
+</ul>
+								<a class="mobile-nav-trigger" href="#mobilemenu"><i class="fa fa-navicon"></i> </a>
+							</nav>
+							<div class="movilsi" id="mobilemenu">
+								<ul id="menu-menu-aqua-1" class="mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-9416"><a href="https://estudiovmm.com/" data-ps2id-api="true">INICIO</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9290"><a href="https://estudiovmm.com/nosotros/" data-ps2id-api="true">LA FIRMA</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9289"><a href="https://estudiovmm.com/equipo/" data-ps2id-api="true">ESPECIALISTAS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9396"><a href="https://estudiovmm.com/servicios/" data-ps2id-api="true">ÁREA DE PRÁCTICA</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10496"><a href="https://estudiovmm.com/litigio/" data-ps2id-api="true">LITIGIO</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10495"><a href="https://estudiovmm.com/compliance-penal/" data-ps2id-api="true">COMPLIANCE PENAL</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10494"><a href="https://estudiovmm.com/asesoria/" data-ps2id-api="true">ASESORÍA</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9397"><a href="https://estudiovmm.com/contacto/" data-ps2id-api="true">CONTACTO</a></li>
+</ul>							
+						</header>
+							</div>
+						</div><!-- /site-bar -->
+					</div>
+				</div>
+		</div>
+		
+	<div class="container">
+		<div class="row">
+			
+					</div>
+				
+				
+				<div id="site-content">
+  <section class="wpb-content-wrapper"><div id="poli" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h2 style="text-align: center;">Políticas de privacidad y<br />
+protección de datos</h2>
+<p>&nbsp;</p>
+<p>Estudio VMM es una firma especializada en litigio, compliance penal y asesoría, cuenta con altos estándares de servicio para hacer realidad los objetivos trazados por los clientes.</p>
+<p>&nbsp;</p>
+<p>Esta Declaración de Privacidad describe cómo el Estudio VMM (en adelante, “La Firma”) con domicilio en Jirón Cruz del Sur 140–154, Oficina 1208, Santiago de Surco (Edificio Time) recoge, usa, comparte, y de otra manera procesa los Datos Personales (definidos a continuación) que obtiene a través de sus sitios web sobre:</p>
+<ul>
+<li>Visitantes a nuestros sitios web, aplicaciones móviles y otras propiedades en línea.</li>
+<li>Personas de contacto de nuestros clientes y/o clientes potenciales, quienes nos contactan para solicitar servicios, suscribirse, descarga de contenidos de nuestras plataformas, recibir alertas e información legal de interés y/o participar en eventos organizados por “La Firma”.</li>
+<li>Recopilación de datos para nuestras analíticas, prevención de riesgos, derecho al olvido y derechos ARCO, así como en la transferencia internacional de datos personales, auditorías de cumplimiento normativo, diseño e implementación de políticas de privacidad y seguridad.</li>
+<li>“La Firma” cumple de manera ética con todos los temas relacionados a la privacidad y cumplimiento de las normas de protección de datos confidenciales.</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Finalidades</strong></p>
+<p>Los datos que se proporcionan a través de la web serán tratados para la gestión del contacto o de la consulta realizada, y en su caso, si se produce posterior encargo profesional la gestión profesional, así como el archivo de expedientes.</p>
+<p>&nbsp;</p>
+<p><strong>Legitimación del tratamiento</strong></p>
+<p>La legitimación del tratamiento de sus datos es el consentimiento que presta enviando el formulario de contacto o la consulta. Si se produce encargo profesional, la legitimación del tratamiento será la relación contractual que se establezca, así como el cumplimiento de las obligaciones profesionales y legales derivadas del mismo.</p>
+<p>Los datos personales que se recaben formarán parte de una base de datos de “La Firma”, permanecerán vigentes durante aquel periodo que el cliente considere necesario para cumplir la finalidad específica para la que los datos fueron recabados, una vez concluido éste, sus datos se cancelarán y bloquearán, para su posterior supresión de conformidad con la Ley de Protección de Datos Personales, Ley Nº29733 y su norma reglamentaria.</p>
+
+		</div>
+	</div>
+<div class="vc_btn3-container vc_btn3-center" ><a style="background-color:#d36667; color:#ffffff;" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-custom" href="https://estudiovmm.com/valverde-morales-marticorena/" title="Valverde, Morales &amp; Marticorena">VOLVER</a></div></div></div></div></div>
+</section>
+</div><!-- /site-content -->
+									<footer id="footer">
+
+										
+					</footer><!-- /footer -->
+<!-- /col-md-12 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+</div><!-- #page -->
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.2' id='swv-js' defer></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/estudiovmm.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.2' id='contact-form-7-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/mystickymenu/js/detectmobilebrowser.js?ver=2.6.1' id='detectmobilebrowser-js' defer></script>
+<script type='text/javascript' id='mystickymenu-js-extra'>
+/* <![CDATA[ */
+var option = {"mystickyClass":"header","activationHeight":"1","disableWidth":"0","disableLargeWidth":"0","adminBar":"false","device_desktop":"1","device_mobile":"1","mystickyTransition":"fade","mysticky_disable_down":"false"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/mystickymenu/js/mystickymenu.min.js?ver=2.6.1' id='mystickymenu-js' defer></script>
+<script type='text/javascript' id='page-scroll-to-id-plugin-script-js-extra'>
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[href*='#']:not([href='#'])","autoSelectorMenuLinks":"true","excludeSelector":"a[href^='#tab-'], a[href^='#tabs-'], a[data-toggle]:not([data-toggle='tooltip']), a[data-slide], a[data-vc-tabs], a[data-vc-accordion], a.screen-reader-text.skip-link","scrollSpeed":800,"autoScrollSpeed":"true","scrollEasing":"easeInOutQuint","scrollingEasing":"easeOutQuint","forceScrollEasing":"false","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","autoCorrectScrollExtend":"false","layout":"vertical","offset":0,"dummyOffset":"false","highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"true","scrollToHashForAll":"true","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","unbindUnrelatedClickEventsSelector":"","normalizeAnchorPointTargets":"false","encodeLinks":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js?ver=1.7.7' id='page-scroll-to-id-plugin-script-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/superfish.js?ver=1.7.5' id='superfish-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/jquery.matchHeight-min.js?ver=1.7' id='matchHeight-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/slick.min.js?ver=1.5.7' id='slick-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/jquery.mmenu.min.all.js?ver=5.2.0' id='mmenu-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/jquery.fitvids.js?ver=1.1' id='fitVids-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/jquery.magnific-popup.js?ver=1.0.0' id='magnific-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=6.10.0' id='isotope-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/instagramLite.min.js?ver=1.7' id='instagramLite-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/jquery.justifiedGallery.min.js?ver=3.6.0' id='justifiedGallery-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/jquery.sticky-kit.min.js?ver=1.1.2' id='sticky-kit-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/themes/olsen/js/scripts.js?ver=1.7' id='ci-front-scripts-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LdDcUshAAAAAIf9qwAcmn3NixQ62zkc38SBNzlo&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LdDcUshAAAAAIf9qwAcmn3NixQ62zkc38SBNzlo","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.7.2' id='wpcf7-recaptcha-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://estudiovmm.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.10.0' id='wpb_composer_front_js-js' defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://estudiovmm.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+<script type="rocketlazyloadscript">
+window.onscroll = function() {
+            var top = window.pageYOffset || document.documentElement.scrollTop;
+            if (top > 6) {
+				let elemento1 = document.querySelector('#chingo');
+			if(elemento1){
+			   elemento1.classList.add("slidein");
+			   }
+                //document.querySelector('#chingo').classList.add("slideinOpacit");
+            }
+        }
+
+        window.onload = function() {
+			let elemento = document.querySelector('#chingo');
+			if(elemento){
+			   elemento.classList.add("slidein");
+			   }
+            
+        }
+		
+		var elem = document.getElementById("acero");
+		console.log(elem);
+
+		function openFullscreen() {
+		  if (elem.requestFullscreen) {
+			elem.requestFullscreen();
+		  } else if (elem.webkitRequestFullscreen) { /* Safari */
+			elem.webkitRequestFullscreen();
+		  } else if (elem.msRequestFullscreen) { /* IE11 */
+			elem.msRequestFullscreen();
+		  }
+		}
+    </script>
+<script type="rocketlazyloadscript" src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+ <script type="rocketlazyloadscript">
+AOS.init({
+  once: false,
+  mirror: false,
+});
+ </script>
+</body>
+<div class="todito">
+<div class="cerra2">
+	
+<div class="pie3" id="paco"><p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="VMM Defensa Penal de la Empresa" data-lazy-src="https://estudiovmm.com/wp-content/uploads/2021/01/logo-footer.png"><noscript><img src="https://estudiovmm.com/wp-content/uploads/2021/01/logo-footer.png" alt="VMM Defensa Penal de la Empresa"></noscript></p>
+	<a href="https://estudiovmm.com/politicas-de-privacidad/">Política de privacidad</a> 
+	<a href="https://estudiovmm.com/terminos-y-condiciones/">Términos y condiciones</a>
+	</div>
+<div class="pie2">
+<h4>EMPRESA</h4>
+<a href="https://estudiovmm.com/">Inicio</a>
+<a href="https://estudiovmm.com/nosotros/">La firma</a>
+<a href="https://estudiovmm.com/equipo/">Especialistas</a>
+<a href="https://estudiovmm.com/contacto/">Contacto</a>
+</div>
+<div class="pie2">
+	<h4>SERVICIOS</h4>
+<a href="https://estudiovmm.com/servicios/">Áreas de práctica</a>
+<a href="https://estudiovmm.com/litigio/">Litigio</a>
+<a href="https://estudiovmm.com/compliance-penal/">Compliance penal</a>
+<a href="https://estudiovmm.com/asesoria/">Asesoría</a></div>
+<div class="pie2">
+	<h4>CONTENIDO</h4>
+<a target="_blank" href="https://www.linkedin.com/company/morales-valverde-abogados">LinkedIn</a>
+<a id="sumare" target="_blank" href="https://www.facebook.com/pages/Estudio-Valverde-Morales-Marticorena/103613278317612">Facebook</a>
+	</div>
+	<div id="pacopaco3">
+	<div class="pepe" id="pacopaco2">
+	<a href="https://estudiovmm.com/politicas-de-privacidad/">Política de privacidad</a> 
+	<a href="https://estudiovmm.com/terminos-y-condiciones/">Términos y condiciones</a>
+	</div>
+	</div>
+<div class="pie2 left">
+<h4>DIRECCIÓN</h4>
+<p>Jirón Cruz del Sur 140–154,</p>
+<p>Oficina 1208, Santiago de Surco</p>
+<p>(Edificio Time)</p>
+<br>
+	<p><strong>T:</strong>511 340 9386</p>
+	<p><strong>C:</strong> contacto@estudiovmm.com</p></div>
+</div>
+</div>
+	<div class="cierre" >
+	<div class="anchito">
+		<div id="feo"><p>
+		2023 / VALVERDE, MORALES & MARTICORENA - Todos los derechos reservados
+		</p></div>	
+		<div id="feo" class="dere">
+		<p>
+		 Website diseñada por <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Mutante" data-lazy-src="https://estudiovmm.com/wp-content/uploads/2021/01/mutante.png"><noscript><img src="https://estudiovmm.com/wp-content/uploads/2021/01/mutante.png" alt="Mutante"></noscript></p></div>
+	</div></div>
+</html>
+
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1674834968 -->
