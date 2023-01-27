@@ -40,7 +40,8 @@ error_log
 *Thumbs.db
 *.sass-cache*
 *~imageoptim*
-/wp-content/plugins
+#/wp-content/plugins
+/wp-content/cache/*
 *config.codekit3
 wp-content/plugins/dataporten-oauth/URL_USER.txt
 wp-content/plugins/dataporten-oauth/URL_GROUP.txt
