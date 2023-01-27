@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 Theme Name: Olsen
-Version: 1.7
+Version: 1.7.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ci_theme
@@ -23,6 +23,7 @@ Domain Path: /languages
 .. 10. External Plugins
 .. 11. Global Mediaqueries
 .. 12. E-Commerce (WooCommerce)
+.. 13. Custom CSS (Jenner)
 
 */
 /* -----------------------------------------
@@ -3882,3 +3883,11 @@ table.my_account_orders {
 
 /* Fin Aquafondo
 =================================== */
+
+/* -----------------------------------------
+	13. Custom CSS (Jenner)
+----------------------------------------- */
+* {
+  scroll-behavior: smooth;
+  outline: none;
+}
