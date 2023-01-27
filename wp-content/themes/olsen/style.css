@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 Theme Name: Olsen
-Version: 1.7.2
+Version: 1.7.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ci_theme
@@ -3890,4 +3890,21 @@ table.my_account_orders {
 * {
   scroll-behavior: smooth;
   outline: none;
+}
+
+.vc-hoverbox-block{
+  width: 100%!important;
+  height: 100%!important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+#ichi{
+  background-position-y: 0!important;
+  background-attachment: fixed!important;
+  background-size: cover!important;
+}
+
+div#recove2{
+  margin-top: -15%!important;
 }
