@@ -129,6 +129,8 @@ function ci_theme_enqueue_scripts() {
 		'justifiedGallery',
 	), $theme->get( 'Version' ) );
 
+	
+
 	if( is_child_theme() ) {
 		wp_enqueue_style( 'ci-style-child', get_stylesheet_directory_uri() . '/style.css', array(
 			'ci-style',
@@ -704,3 +706,8 @@ if ( class_exists( 'WooCommerce' ) ) :
 	add_theme_support( 'wc-product-gallery-slider' );
 
 endif;
+
+function admin_style() {
+	wp_enqueue_style('admin-styles', get_stylesheet_directory_uri().'/css/admin.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
